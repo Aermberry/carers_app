@@ -1,6 +1,9 @@
 package com.example.hkag_app_android.activity;
 
+import android.annotation.SuppressLint;
 import android.os.Bundle;
+import android.view.MotionEvent;
+import android.view.View;
 import android.widget.ListView;
 
 import androidx.appcompat.app.AppCompatActivity;
@@ -10,15 +13,16 @@ import com.example.hkag_app_android.domain.NavigationItem;
 
 
 public class MainActivity extends AppCompatActivity {
+    ListView _navigationItemListView;
 
-
+    @SuppressLint("ClickableViewAccessibility")
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 
         setContentView(R.layout.home_navigation);
 
-        ListView navigationItemListView = (ListView) findViewById(R.id.navigationItemList);
+        ListView _navigationItemListView = (ListView) findViewById(R.id.navigationItemList);
 
         NavigationItem[] data = {
                 new NavigationItem(R.drawable.beadhouse_icon, "選擇安老院舍"),
@@ -30,7 +34,11 @@ public class MainActivity extends AppCompatActivity {
                 new NavigationItem(R.drawable.project_icon, "計劃簡介"),
                 new NavigationItem(R.drawable.contact_icon, "聯絡我們")};
 
-        NavigationAdapter navigationAdapter = new NavigationAdapter(this,R.layout.navigation_item,data);
-        navigationItemListView.setAdapter(navigationAdapter);
+        NavigationAdapter navigationAdapter = new NavigationAdapter(this, R.layout.navigation_item, data);
+        _navigationItemListView.setAdapter(navigationAdapter);
+
+        _navigationItemListView.setOnTouchListener((v, event) -> (event.getAction() == MotionEvent.ACTION_MOVE));
     }
+
+
 }
