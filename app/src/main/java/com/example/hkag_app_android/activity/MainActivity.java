@@ -1,10 +1,14 @@
 package com.example.hkag_app_android.activity;
 
 import android.annotation.SuppressLint;
+import android.content.Intent;
 import android.os.Bundle;
+import android.os.Debug;
 import android.view.MotionEvent;
 import android.view.View;
+import android.widget.AdapterView;
 import android.widget.ListView;
+import android.widget.Toast;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -38,6 +42,17 @@ public class MainActivity extends AppCompatActivity {
         _navigationItemListView.setAdapter(navigationAdapter);
 
         _navigationItemListView.setOnTouchListener((v, event) -> (event.getAction() == MotionEvent.ACTION_MOVE));
+
+        _navigationItemListView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+            @Override
+            public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
+
+                Toast.makeText(MainActivity.this, id + "", Toast.LENGTH_LONG).show();
+
+                Intent intent = new Intent(MainActivity.this, Beadhouse.class);
+                startActivity(intent);
+            }
+        });
     }
 
 
