@@ -9,4 +9,9 @@
     <color name="white">#FFFFFFFF</color>
     <color name="themColor">#3EADBC</color>
     <color name="themLightColor">#FCE7B8</color>
+
+
+    <color name="colorAccent">#FF4081</color>
+    <color name="green">#0e932e</color>
+    <color name="text">#565555</color>
 </resources>

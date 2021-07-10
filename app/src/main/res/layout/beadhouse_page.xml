@@ -1,43 +1,125 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical">
+    android:scrollbars="none"
+    >
 
-    <ImageView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:contentDescription="@string/action_settings"
-        android:paddingLeft="25dp"
-        android:paddingTop="28dp"
-        app:srcCompat="@drawable/back_button" />
-
-    <RelativeLayout
+    <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:gravity="center"
-        android:orientation="vertical">
+        android:orientation="vertical"
+        >
+        <!--返回按鈕-->
 
-
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="85dp"
-            android:background="@color/themLightColor"
-            />
-        <LinearLayout
-            android:id="@+id/space"
-            android:layout_width="match_parent"
-            android:layout_height="33dp"
-            android:layout_alignParentTop="true"
-            android:background="@color/themColor"
-            android:orientation="horizontal" />
         <ImageView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_centerHorizontal="true"
-            app:srcCompat="@drawable/beadhouse" />
+            android:contentDescription="@string/action_settings"
+            android:paddingLeft="25dp"
+            android:paddingTop="28dp"
+            app:srcCompat="@drawable/back_button" />
+        <!--標題-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <!--圖標icon-->
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="vertical">
 
-    </RelativeLayout>
 
-</LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="85dp"
+                    android:background="@color/themLightColor" />
+
+                <LinearLayout
+                    android:id="@+id/space"
+                    android:layout_width="match_parent"
+                    android:layout_height="33dp"
+                    android:layout_alignParentTop="true"
+                    android:background="@color/themColor"
+                    android:orientation="horizontal" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    app:srcCompat="@drawable/beadhouse" />
+
+            </RelativeLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:height="100dp"
+                android:background="@color/themLightColor"
+                android:gravity="center"
+                android:text="@string/beadhouse_title"
+                android:textSize="@dimen/font_27"
+                android:textStyle="bold" />
+        </LinearLayout>
+        <!--視頻-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:background="@color/white" />
+        <!--介绍文字-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingHorizontal="@dimen/padding_11"
+            android:paddingVertical="@dimen/padding_27">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/introduce_title"
+                android:textColor="@color/white"
+                android:textSize="@dimen/font_32" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="@dimen/padding_14"
+                android:text="@string/introduce_content"
+                android:textColor="@color/white"
+                android:textSize="@dimen/font_18" />
+        </LinearLayout>
+
+        <com.google.android.material.tabs.TabLayout
+            android:id="@+id/tab_layout"
+            android:layout_width="match_parent"
+            style="@style/MyTablayoutstyle"
+            >
+            <com.google.android.material.tabs.TabItem
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:icon="@drawable/eye_icon"/>
+            <com.google.android.material.tabs.TabItem
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:icon="@drawable/ear_icon"/>
+            <com.google.android.material.tabs.TabItem
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:icon="@drawable/mouth_icon"/>
+            <com.google.android.material.tabs.TabItem
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:icon="@drawable/konk_icon"/>
+        </com.google.android.material.tabs.TabLayout>
+
+        <androidx.viewpager.widget.ViewPager
+            android:id="@+id/view_pager"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            />
+    </LinearLayout>
+</ScrollView>

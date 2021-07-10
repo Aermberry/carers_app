@@ -11,5 +11,10 @@
 
     <string name="hello_first_fragment">Hello first fragment</string>
     <string name="hello_second_fragment">Hello second fragment. Arg: %1$s</string>
-    <string name="headhouse_title">選擇安老院舍</string>
+
+    <!--headhouse-->
+    <string name="beadhouse_title">選擇安老院舍</string>
+    <string name="introduce_content">能安享晚年，相信是每位長者的願望。在香港，除了居家安老外，入住安老院舍亦是一個選擇。而本港安老院舍林立，如何選擇適合長者、又有良好照顧及護理質素的院舍是大眾關注的議題。\n\n當選擇安老院時，可以利用五官感覺去協助揀選優質院舍，做到眼到、耳到、鼻到及口到
+選擇已通過認可機構之專業評審的院舍，確保院舍服務質素</string>
+    <string name="introduce_title">如何选择？</string>
 </resources>
