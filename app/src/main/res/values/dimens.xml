@@ -10,4 +10,7 @@
     <dimen name="font_18">18sp</dimen>
     <dimen name="padding_27">27dp</dimen>
     <dimen name="padding_14">14dp</dimen>
+    <dimen name="font_70">70sp</dimen>
+    <dimen name="padding_24">24dp</dimen>
+    <dimen name="padding_29">29dp</dimen>
 </resources>

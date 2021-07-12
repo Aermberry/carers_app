@@ -96,6 +96,7 @@
         <com.google.android.material.tabs.TabLayout
             android:id="@+id/tab_layout"
             android:layout_width="match_parent"
+            android:layout_height="100dp"
             style="@style/MyTablayoutstyle"
             >
             <com.google.android.material.tabs.TabItem
@@ -121,5 +122,34 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="@dimen/padding_29"
+            android:paddingLeft="@dimen/padding_24"
+            android:orientation="vertical"
+            android:background="@color/themLightColor"
+            >
+            <!--眼到 标题-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center"
+                >
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="眼到"
+                    android:textColor="@color/themColor"
+                    android:textSize="@dimen/font_70"
+                    />
+                <LinearLayout
+                    android:background="@color/themColor"
+                    android:layout_width="match_parent"
+                    android:layout_height="10dp"/>
+            </LinearLayout>
+
+        </LinearLayout>
     </LinearLayout>
 </ScrollView>
