@@ -48,9 +48,9 @@
                     android:layout_width="56dp"
                     android:layout_height="56dp"
                     android:layout_centerHorizontal="true"
+                    android:contentDescription="@string/app_name"
                     android:scaleType="fitXY"
-                    app:srcCompat="@drawable/beadhouse"
-                    android:contentDescription="@string/app_name" />
+                    app:srcCompat="@drawable/beadhouse" />
 
             </RelativeLayout>
 
@@ -61,8 +61,8 @@
                 android:background="@color/themLightColor"
                 android:gravity="center"
                 android:text="@string/beadhouse_title"
-                android:textSize="@dimen/font_27"
                 android:textColor="@color/themColor"
+                android:textSize="@dimen/font_27"
                 android:textStyle="bold" />
         </LinearLayout>
         <!--視頻-->
@@ -94,44 +94,46 @@
                 android:textSize="@dimen/font_18" />
         </LinearLayout>
 
+
+        <!--        <androidx.viewpager.widget.ViewPager-->
+        <!--            android:id="@+id/view_pager"-->
+        <!--            android:layout_width="match_parent"-->
+        <!--            android:layout_height="match_parent">-->
+
+        <!--            <com.google.android.material.tabs.TabLayout-->
+        <!--                android:id="@+id/tab_layout"-->
+        <!--                style="@style/MyTablayoutstyle"-->
+        <!--                android:layout_width="match_parent"-->
+        <!--                android:layout_height="wrap_content">-->
+
+        <!--                <com.google.android.material.tabs.TabItem-->
+        <!--                    android:layout_width="wrap_content"-->
+        <!--                    android:layout_height="wrap_content"-->
+        <!--                    android:icon="@drawable/eye_icon" />-->
+
+        <!--                <com.google.android.material.tabs.TabItem-->
+        <!--                    android:layout_width="wrap_content"-->
+        <!--                    android:layout_height="wrap_content"-->
+        <!--                    android:icon="@drawable/ear_icon" />-->
+
+        <!--                <com.google.android.material.tabs.TabItem-->
+        <!--                    android:layout_width="wrap_content"-->
+        <!--                    android:layout_height="wrap_content"-->
+        <!--                    android:icon="@drawable/mouth_icon" />-->
+
+        <!--                <com.google.android.material.tabs.TabItem-->
+        <!--                    android:layout_width="wrap_content"-->
+        <!--                    android:layout_height="wrap_content"-->
+        <!--                    android:icon="@drawable/konk_icon" />-->
+        <!--            </com.google.android.material.tabs.TabLayout>-->
+        <!--        </androidx.viewpager.widget.ViewPager>-->
         <com.google.android.material.tabs.TabLayout
             android:id="@+id/tab_layout"
-            style="@style/MyTablayoutstyle"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content">
-
-            <com.google.android.material.tabs.TabItem
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:icon="@drawable/eye_icon" />
-
-            <com.google.android.material.tabs.TabItem
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:icon="@drawable/ear_icon" />
-
-            <com.google.android.material.tabs.TabItem
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:icon="@drawable/mouth_icon" />
-
-            <com.google.android.material.tabs.TabItem
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:icon="@drawable/konk_icon" />
-        </com.google.android.material.tabs.TabLayout>
-
+            android:layout_height="wrap_content" />
         <androidx.viewpager.widget.ViewPager
             android:id="@+id/view_pager"
             android:layout_width="match_parent"
             android:layout_height="match_parent" />
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="vertical"
-            android:paddingTop="@dimen/padding_11"
-            >
-
-        </LinearLayout>
     </LinearLayout>
 </ScrollView>
