@@ -59,7 +59,7 @@
         </RelativeLayout>
 
         <!--导航选项-->
-        <com.example.hkag_app_android.activity.MyList
+        <com.example.hkag_app_android.home.ui.home_navigation.widget.NavigationList
             android:id="@+id/navigationItemList"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
@@ -68,7 +68,7 @@
             android:paddingHorizontal="10dp"
             android:paddingTop="20dp"
             android:paddingBottom="20dp"
-            android:scrollbars="none"></com.example.hkag_app_android.activity.MyList>
+            android:scrollbars="none"></com.example.hkag_app_android.home.ui.home_navigation.widget.NavigationList>
 
         <!--底图视图-->
         <LinearLayout

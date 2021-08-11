@@ -1,4 +1,4 @@
-package com.example.hkag_app_android.activity;
+package com.example.hkag_app_android.home.ui.home_navigation.widget;
 
 import android.content.Context;
 import android.view.LayoutInflater;
