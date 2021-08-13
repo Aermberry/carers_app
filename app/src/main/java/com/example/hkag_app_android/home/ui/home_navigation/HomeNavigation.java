@@ -13,7 +13,7 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import com.example.hkag_app_android.R;
 import com.example.hkag_app_android.domain.NavigationItem;
-import com.example.hkag_app_android.information.ui.beadhouse_information.Beadhouse;
+import com.example.hkag_app_android.information.ui.beadhouse_information.BeadHouseActivity;
 import com.example.hkag_app_android.home.ui.home_navigation.widget.NavigationAdapter;
 
 
@@ -50,7 +50,7 @@ public class HomeNavigation extends AppCompatActivity {
 
                 Toast.makeText(HomeNavigation.this, id + "", Toast.LENGTH_LONG).show();
 
-                Intent intent = new Intent(HomeNavigation.this, Beadhouse.class);
+                Intent intent = new Intent(HomeNavigation.this, BeadHouseActivity.class);
                 startActivity(intent);
             }
         });
