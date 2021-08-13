@@ -1,9 +1,8 @@
-package com.example.hkag_app_android.activity;
+package com.example.hkag_app_android.home.ui.home_navigation;
 
 import android.annotation.SuppressLint;
 import android.content.Intent;
 import android.os.Bundle;
-import android.os.Debug;
 import android.view.MotionEvent;
 import android.view.View;
 import android.widget.AdapterView;
@@ -14,9 +13,11 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import com.example.hkag_app_android.R;
 import com.example.hkag_app_android.domain.NavigationItem;
+import com.example.hkag_app_android.information.ui.beadhouse_information.BeadHouseActivity;
+import com.example.hkag_app_android.home.ui.home_navigation.widget.NavigationAdapter;
 
 
-public class MainActivity extends AppCompatActivity {
+public class HomeNavigation extends AppCompatActivity {
     ListView _navigationItemListView;
 
     @SuppressLint("ClickableViewAccessibility")
@@ -47,9 +48,9 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
 
-                Toast.makeText(MainActivity.this, id + "", Toast.LENGTH_LONG).show();
+                Toast.makeText(HomeNavigation.this, id + "", Toast.LENGTH_LONG).show();
 
-                Intent intent = new Intent(MainActivity.this, Beadhouse.class);
+                Intent intent = new Intent(HomeNavigation.this, BeadHouseActivity.class);
                 startActivity(intent);
             }
         });

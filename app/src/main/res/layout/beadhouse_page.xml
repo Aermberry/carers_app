@@ -3,23 +3,25 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:scrollbars="none"
-    >
+    android:scrollbars="none">
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="vertical"
-        >
+        android:orientation="vertical">
         <!--返回按鈕-->
 
-        <ImageView
+        <ImageButton
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:background="?android:selectableItemBackground"
+            android:layout_marginStart="25dp"
+            android:layout_marginLeft="25dp"
+            android:layout_marginTop="28dp"
             android:contentDescription="@string/action_settings"
-            android:paddingLeft="25dp"
-            android:paddingTop="28dp"
-            app:srcCompat="@drawable/back_button" />
+            app:srcCompat="@drawable/back_button"
+            android:onClick="onBackToHomeNavigationPage"
+            />
         <!--標題-->
         <LinearLayout
             android:layout_width="match_parent"
@@ -47,9 +49,11 @@
                     android:orientation="horizontal" />
 
                 <ImageView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
+                    android:layout_width="56dp"
+                    android:layout_height="56dp"
                     android:layout_centerHorizontal="true"
+                    android:contentDescription="@string/app_name"
+                    android:scaleType="fitXY"
                     app:srcCompat="@drawable/beadhouse" />
 
             </RelativeLayout>
@@ -61,6 +65,7 @@
                 android:background="@color/themLightColor"
                 android:gravity="center"
                 android:text="@string/beadhouse_title"
+                android:textColor="@color/themColor"
                 android:textSize="@dimen/font_27"
                 android:textStyle="bold" />
         </LinearLayout>
@@ -93,63 +98,47 @@
                 android:textSize="@dimen/font_18" />
         </LinearLayout>
 
+
+        <!--        <androidx.viewpager.widget.ViewPager-->
+        <!--            android:id="@+id/view_pager"-->
+        <!--            android:layout_width="match_parent"-->
+        <!--            android:layout_height="match_parent">-->
+
+        <!--            <com.google.android.material.tabs.TabLayout-->
+        <!--                android:id="@+id/tab_layout"-->
+        <!--                style="@style/MyTablayoutstyle"-->
+        <!--                android:layout_width="match_parent"-->
+        <!--                android:layout_height="wrap_content">-->
+
+        <!--                <com.google.android.material.tabs.TabItem-->
+        <!--                    android:layout_width="wrap_content"-->
+        <!--                    android:layout_height="wrap_content"-->
+        <!--                    android:icon="@drawable/eye_icon" />-->
+
+        <!--                <com.google.android.material.tabs.TabItem-->
+        <!--                    android:layout_width="wrap_content"-->
+        <!--                    android:layout_height="wrap_content"-->
+        <!--                    android:icon="@drawable/ear_icon" />-->
+
+        <!--                <com.google.android.material.tabs.TabItem-->
+        <!--                    android:layout_width="wrap_content"-->
+        <!--                    android:layout_height="wrap_content"-->
+        <!--                    android:icon="@drawable/mouth_icon" />-->
+
+        <!--                <com.google.android.material.tabs.TabItem-->
+        <!--                    android:layout_width="wrap_content"-->
+        <!--                    android:layout_height="wrap_content"-->
+        <!--                    android:icon="@drawable/konk_icon" />-->
+        <!--            </com.google.android.material.tabs.TabLayout>-->
+        <!--        </androidx.viewpager.widget.ViewPager>-->
         <com.google.android.material.tabs.TabLayout
             android:id="@+id/tab_layout"
             android:layout_width="match_parent"
-            android:layout_height="100dp"
-            style="@style/MyTablayoutstyle"
-            >
-            <com.google.android.material.tabs.TabItem
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:icon="@drawable/eye_icon"/>
-            <com.google.android.material.tabs.TabItem
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:icon="@drawable/ear_icon"/>
-            <com.google.android.material.tabs.TabItem
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:icon="@drawable/mouth_icon"/>
-            <com.google.android.material.tabs.TabItem
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:icon="@drawable/konk_icon"/>
-        </com.google.android.material.tabs.TabLayout>
+            android:layout_height="wrap_content" />
 
         <androidx.viewpager.widget.ViewPager
             android:id="@+id/view_pager"
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            />
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:paddingTop="@dimen/padding_29"
-            android:paddingLeft="@dimen/padding_24"
-            android:orientation="vertical"
-            android:background="@color/themLightColor"
-            >
-            <!--眼到 标题-->
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:orientation="horizontal"
-                android:gravity="center"
-                >
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="眼到"
-                    android:textColor="@color/themColor"
-                    android:textSize="@dimen/font_70"
-                    />
-                <LinearLayout
-                    android:background="@color/themColor"
-                    android:layout_width="match_parent"
-                    android:layout_height="10dp"/>
-            </LinearLayout>
-
-        </LinearLayout>
+            android:layout_height="match_parent" />
     </LinearLayout>
 </ScrollView>

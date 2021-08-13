@@ -1,20 +1,20 @@
-package com.example.hkag_app_android.activity;
+package com.example.hkag_app_android.home.ui.home_navigation.widget;
 
 import android.content.Context;
 import android.util.AttributeSet;
 import android.widget.ListView;
 
-public class MyList extends ListView {
+public class NavigationList extends ListView {
 
-    public MyList(Context context) {
+    public NavigationList(Context context) {
         super(context);
     }
 
-    public MyList(Context context, AttributeSet attrs) {
+    public NavigationList(Context context, AttributeSet attrs) {
         super(context, attrs);
     }
 
-    public MyList(Context context, AttributeSet attrs, int defStyleAttr) {
+    public NavigationList(Context context, AttributeSet attrs, int defStyleAttr) {
         super(context, attrs, defStyleAttr);
     }
 

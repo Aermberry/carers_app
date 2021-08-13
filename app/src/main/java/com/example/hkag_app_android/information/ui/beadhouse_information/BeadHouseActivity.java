@@ -1,15 +1,19 @@
-package com.example.hkag_app_android.activity;
+package com.example.hkag_app_android.information.ui.beadhouse_information;
 
 import android.os.Bundle;
+import android.view.View;
+
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.fragment.app.Fragment;
 import androidx.viewpager.widget.ViewPager;
 
 import com.example.hkag_app_android.R;
 import com.google.android.material.tabs.TabLayout;
 
-public class Beadhouse extends AppCompatActivity {
-    private TabLayout mTabLayout;
-    private ViewPager mViewPager;
+import java.util.ArrayList;
+
+public class BeadHouseActivity extends AppCompatActivity {
+
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
@@ -19,9 +23,7 @@ public class Beadhouse extends AppCompatActivity {
 
     }
 
-    private void initData(){
-//        mTabLayout=(TabLayout) findViewById(R.id.tab_layout);
-//        mViewPager=(ViewPager)findViewById(R.id.view_pager);
-
+    public void onBackToHomeNavigationPage(View view) {
+        finish();
     }
 }
