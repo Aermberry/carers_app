@@ -20,6 +20,7 @@
             </intent-filter>
         </activity>
         <activity android:name=".information.ui.beadhouse_information.BeadHouseActivity" />
+        <activity android:name=".information.ui.contact_information.ContactInformationActivity" />
     </application>
 
 </manifest>

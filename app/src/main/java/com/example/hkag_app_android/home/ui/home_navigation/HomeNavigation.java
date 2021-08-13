@@ -1,6 +1,7 @@
 package com.example.hkag_app_android.home.ui.home_navigation;
 
 import android.annotation.SuppressLint;
+import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.MotionEvent;
@@ -15,6 +16,9 @@ import com.example.hkag_app_android.R;
 import com.example.hkag_app_android.domain.NavigationItem;
 import com.example.hkag_app_android.information.ui.beadhouse_information.BeadHouseActivity;
 import com.example.hkag_app_android.home.ui.home_navigation.widget.NavigationAdapter;
+import com.example.hkag_app_android.information.ui.contact_information.ContactInformationActivity;
+
+import java.util.List;
 
 
 public class HomeNavigation extends AppCompatActivity {
@@ -52,6 +56,17 @@ public class HomeNavigation extends AppCompatActivity {
 
                 Intent intent = new Intent(HomeNavigation.this, BeadHouseActivity.class);
                 startActivity(intent);
+
+                switch ((int) id) {
+                    case 0:
+                        intent = new Intent(HomeNavigation.this, BeadHouseActivity.class);
+                        break;
+                    case 1:
+                        intent = new Intent(HomeNavigation.this, ContactInformationActivity.class);
+                        break;
+                    default:
+                        break;
+                }
             }
         });
     }
