@@ -1,10 +1,8 @@
 package com.example.hkag_app_android.home.ui.home_navigation;
 
 import android.annotation.SuppressLint;
-import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
-import android.util.Log;
 import android.view.MotionEvent;
 import android.view.View;
 import android.widget.AdapterView;
@@ -18,9 +16,12 @@ import com.example.hkag_app_android.domain.NavigationItem;
 import com.example.hkag_app_android.information.ui.beadhouse_information.BeadHouseActivity;
 import com.example.hkag_app_android.home.ui.home_navigation.widget.NavigationAdapter;
 import com.example.hkag_app_android.information.ui.contact_information.ContactInformationActivity;
+import com.example.hkag_app_android.information.ui.latest_events.LatestEventsActivity;
+import com.example.hkag_app_android.information.ui.online_learning_brief.OnlineLearningBriefActivity;
+import com.example.hkag_app_android.information.ui.project_brief.ProjectBriefActivity;
 import com.example.hkag_app_android.information.ui.video_play.VideoPlayActivity;
-
-import java.util.List;
+import com.example.hkag_app_android.information.ui.website_information.WebsiteInformationActivity;
+import com.example.hkag_app_android.information.ui.workshop_brief.WorkshopBriefActivity;
 
 
 public class HomeNavigation extends AppCompatActivity {
@@ -33,7 +34,7 @@ public class HomeNavigation extends AppCompatActivity {
 
         setContentView(R.layout.home_navigation);
 
-        ListView _navigationItemListView = (ListView) findViewById(R.id.navigationItemList);
+        _navigationItemListView = (ListView) findViewById(R.id.navigationItemList);
 
         NavigationItem[] data = {
                 new NavigationItem(R.drawable.beadhouse_icon, "選擇安老院舍"),
@@ -66,22 +67,22 @@ public class HomeNavigation extends AppCompatActivity {
                         intent = new Intent(HomeNavigation.this, VideoPlayActivity.class);
                         break;
                     case 2:
-                        intent = new Intent(HomeNavigation.this, VideoPlayActivity.class);
+                        intent = new Intent(HomeNavigation.this, OnlineLearningBriefActivity.class);
                         break;
                     case 3:
-                        intent = new Intent(HomeNavigation.this, VideoPlayActivity.class);
+                        intent = new Intent(HomeNavigation.this, LatestEventsActivity.class);
                         break;
                     case 4:
-                        intent = new Intent(HomeNavigation.this, VideoPlayActivity.class);
+                        intent = new Intent(HomeNavigation.this, WorkshopBriefActivity.class);
                         break;
                     case 5:
-                        intent = new Intent(HomeNavigation.this, VideoPlayActivity.class);
+                        intent = new Intent(HomeNavigation.this, WebsiteInformationActivity.class);
                         break;
                     case 6:
-                        intent = new Intent(HomeNavigation.this, VideoPlayActivity.class);
+                        intent = new Intent(HomeNavigation.this, ProjectBriefActivity.class);
                         break;
                     case 7:
-                        intent = new Intent(HomeNavigation.this, VideoPlayActivity.class);
+                        intent = new Intent(HomeNavigation.this, ContactInformationActivity.class);
                         break;
                     default:
                         break;
