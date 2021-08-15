@@ -4,6 +4,7 @@ import android.annotation.SuppressLint;
 import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.MotionEvent;
 import android.view.View;
 import android.widget.AdapterView;
@@ -17,6 +18,7 @@ import com.example.hkag_app_android.domain.NavigationItem;
 import com.example.hkag_app_android.information.ui.beadhouse_information.BeadHouseActivity;
 import com.example.hkag_app_android.home.ui.home_navigation.widget.NavigationAdapter;
 import com.example.hkag_app_android.information.ui.contact_information.ContactInformationActivity;
+import com.example.hkag_app_android.information.ui.video_play.VideoPlayActivity;
 
 import java.util.List;
 
@@ -54,19 +56,37 @@ public class HomeNavigation extends AppCompatActivity {
 
                 Toast.makeText(HomeNavigation.this, id + "", Toast.LENGTH_LONG).show();
 
-                Intent intent = new Intent(HomeNavigation.this, BeadHouseActivity.class);
-                startActivity(intent);
+                Intent intent = null;
 
                 switch ((int) id) {
                     case 0:
                         intent = new Intent(HomeNavigation.this, BeadHouseActivity.class);
                         break;
                     case 1:
-                        intent = new Intent(HomeNavigation.this, ContactInformationActivity.class);
+                        intent = new Intent(HomeNavigation.this, VideoPlayActivity.class);
+                        break;
+                    case 2:
+                        intent = new Intent(HomeNavigation.this, VideoPlayActivity.class);
+                        break;
+                    case 3:
+                        intent = new Intent(HomeNavigation.this, VideoPlayActivity.class);
+                        break;
+                    case 4:
+                        intent = new Intent(HomeNavigation.this, VideoPlayActivity.class);
+                        break;
+                    case 5:
+                        intent = new Intent(HomeNavigation.this, VideoPlayActivity.class);
+                        break;
+                    case 6:
+                        intent = new Intent(HomeNavigation.this, VideoPlayActivity.class);
+                        break;
+                    case 7:
+                        intent = new Intent(HomeNavigation.this, VideoPlayActivity.class);
                         break;
                     default:
                         break;
                 }
+                startActivity(intent);
             }
         });
     }
