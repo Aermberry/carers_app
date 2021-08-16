@@ -8,7 +8,16 @@
     <!--edge distance-->
     <dimen name="padding_11">11dp</dimen>
     <dimen name="padding_14">14dp</dimen>
+    <dimen name="padding_15">15dp</dimen>
+    <dimen name="padding_26">26dp</dimen>
     <dimen name="padding_27">27dp</dimen>
     <dimen name="font_31">31dp</dimen>
     <dimen name="font_32">32sp</dimen>
+    <dimen name="font_17">17dp</dimen>
+    <dimen name="padding_28">28dp</dimen>
+    <dimen name="padding_240">240dp</dimen>
+    <dimen name="padding_20">20dp</dimen>
+    <dimen name="padding_17">17dp</dimen>
+    <dimen name="font_9" />
+    <dimen name="padding_9">9dp</dimen>
 </resources>
