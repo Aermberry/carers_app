@@ -19,4 +19,7 @@
     <string name="introduce_title">如何选择？</string>
     <string name="beadhouse_icon">安老院舍图标</string>
     <string name="video_title">護老技巧示範短片</string>
+    <string name="workshop_brief_title">護老者工作坊</string>
+    <string name="workshop_title">工作坊詳情及報名方法:</string>
+    <string name="website_link_button">前往網頁</string>
 </resources>

@@ -1,6 +1,123 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    android:scrollbars="none">
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <!--返回按鈕-->
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="25dp"
+            android:layout_marginLeft="25dp"
+            android:layout_marginTop="28dp"
+            android:background="?android:selectableItemBackground"
+            android:contentDescription="@string/action_settings"
+            android:onClick="onBackToHomeNavigationPage"
+            app:srcCompat="@drawable/back_button" />
+        <!--標題-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <!--圖標icon-->
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="85dp"
+                    android:background="@color/themLightColor" />
+
+                <LinearLayout
+                    android:id="@+id/space"
+                    android:layout_width="match_parent"
+                    android:layout_height="33dp"
+                    android:layout_alignParentTop="true"
+                    android:background="@color/themColor"
+                    android:orientation="horizontal" />
+
+                <ImageView
+                    android:layout_width="56dp"
+                    android:layout_height="56dp"
+                    android:layout_centerHorizontal="true"
+                    android:contentDescription="@string/app_name"
+                    android:scaleType="fitXY"
+                    app:srcCompat="@drawable/heartbeat" />
+
+            </RelativeLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:height="100dp"
+                android:background="@color/themLightColor"
+                android:gravity="center"
+                android:text="@string/workshop_brief_title"
+                android:textColor="@color/themColor"
+                android:textSize="@dimen/font_27"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <!--    簡介文字-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingHorizontal="@dimen/padding_15"
+            android:paddingVertical="@dimen/padding_26">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="隨著「居家安老」的推展，鼓勵長者留於家中安享晚年，而家中的護老者擔當了一個重要的角色，他們需要有足夠的護老知識和技巧來照顧長者。「護老者工作坊」為護老者提供一些切身的護老技巧培訓，於照顧過程中保障長者和護老者的安全。"
+                android:textColor="@color/white"
+                android:textSize="@dimen/font_18" />
+        </LinearLayout>
+        　
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/padding_2"
+            android:layout_marginTop="@dimen/padding_30"
+            android:layout_marginBottom="@dimen/padding_27"
+            android:background="@color/cardview_light_background" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="@string/workshop_title"
+            android:textColor="@color/white"
+            android:textSize="@dimen/font_20" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/themLightColor"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/icon_open_external_link" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="@dimen/padding_20"
+                android:text="@string/website_link_button" />
+        </LinearLayout>
+
+    </LinearLayout>
+</ScrollView>
