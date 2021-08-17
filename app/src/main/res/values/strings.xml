@@ -22,4 +22,8 @@
     <string name="workshop_brief_title">護老者工作坊</string>
     <string name="workshop_title">工作坊詳情及報名方法:</string>
     <string name="website_link_button">前往網頁</string>
+    <string name="contact_button">　聯絡我們</string>
+    <string name="contact_title">最新活動資訊</string>
+    <string name="online_learning_brief_title">院舍網上學習平台</string>
+    <string name="online_learning_button">前往網上學習平台</string>
 </resources>

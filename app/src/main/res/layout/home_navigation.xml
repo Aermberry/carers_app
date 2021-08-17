@@ -68,7 +68,7 @@
             android:paddingHorizontal="10dp"
             android:paddingTop="20dp"
             android:paddingBottom="20dp"
-            android:scrollbars="none"></com.example.hkag_app_android.home.ui.home_navigation.widget.NavigationList>
+            android:scrollbars="none" />
 
         <!--底图视图-->
         <LinearLayout

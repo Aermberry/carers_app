@@ -1,6 +1,7 @@
 package com.example.hkag_app_android.information.ui.online_learning_brief;
 
 import android.os.Bundle;
+import android.view.View;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -12,5 +13,9 @@ public class OnlineLearningBriefActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
 
         setContentView(R.layout.online_learning_brief_page);
+    }
+
+    public void onBackToHomeNavigationPage(View view) {
+        finish();
     }
 }
