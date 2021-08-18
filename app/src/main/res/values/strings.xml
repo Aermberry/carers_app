@@ -26,4 +26,10 @@
     <string name="contact_title">最新活動資訊</string>
     <string name="online_learning_brief_title">院舍網上學習平台</string>
     <string name="online_learning_button">前往網上學習平台</string>
+    <string name="contact_information_title">護老者咨詢</string>
+    <string name="contact_us_title">聯絡我們</string>
+    <string name="host_organization">主辦機構</string>
+    <string name="donor_agencies">捐助機構</string>
+    <string name="contact_telephone">聯絡電話</string>
+    <string name="phone_image">phone image</string>
 </resources>
