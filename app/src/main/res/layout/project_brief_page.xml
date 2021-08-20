@@ -1,6 +1,124 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    android:scrollbars="none">
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingBottom="@dimen/padding_20">
+        <!--返回按鈕-->
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="25dp"
+            android:layout_marginLeft="25dp"
+            android:layout_marginTop="28dp"
+            android:background="?android:selectableItemBackground"
+            android:contentDescription="@string/action_settings"
+            android:onClick="onBackToHomeNavigationPage"
+            app:srcCompat="@drawable/back_button" />
+        <!--標題-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <!--圖標icon-->
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="85dp"
+                    android:background="@color/themLightColor" />
+
+                <LinearLayout
+                    android:id="@+id/space"
+                    android:layout_width="match_parent"
+                    android:layout_height="33dp"
+                    android:layout_alignParentTop="true"
+                    android:background="@color/themColor"
+                    android:orientation="horizontal" />
+
+                <ImageView
+                    android:layout_width="56dp"
+                    android:layout_height="56dp"
+                    android:layout_centerHorizontal="true"
+                    android:contentDescription="@string/app_name"
+                    android:scaleType="fitXY"
+                    app:srcCompat="@drawable/telephone" />
+
+            </RelativeLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:height="100dp"
+                android:background="@color/themLightColor"
+                android:gravity="center"
+                android:text="@string/project_brief_title"
+                android:textColor="@color/themColor"
+                android:textSize="@dimen/font_27"
+                android:textStyle="bold" />
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginVertical="@dimen/padding_20"
+            android:background="@color/white"
+            android:orientation="vertical"
+            android:paddingVertical="@dimen/padding_40">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="@string/host_organization"
+                android:textSize="@dimen/font_16" />
+
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:contentDescription="@string/host_organization"
+                android:paddingTop="@dimen/padding_20"
+                android:scaleType="fitCenter"
+                android:src="@drawable/company_icon" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:paddingVertical="@dimen/padding_20"
+                android:text="@string/donor_agencies"
+                android:textSize="@dimen/font_16" />
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:contentDescription="@string/foundation"
+                android:scaleType="fitCenter"
+                android:src="@drawable/foundation" />
+        </LinearLayout>
+
+        <!-- 簡介內容-->
+
+        <TextView
+            android:paddingHorizontal="@dimen/padding_20"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/project_brief"
+            android:textColor="@color/white"
+            android:textSize="@dimen/font_18" />
+    </LinearLayout>
+</ScrollView>

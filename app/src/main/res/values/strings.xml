@@ -32,4 +32,8 @@
     <string name="donor_agencies">捐助機構</string>
     <string name="contact_telephone">聯絡電話</string>
     <string name="phone_image">phone image</string>
+    <string name="to_website">前往网页</string>
+    <string name="foundation">foundation</string>
+    <string name="project_brief_title">計劃簡介</string>
+    <string name="project_brief">隨著香港人口持續老化，安老服務需求與日俱增，大眾關注如何選擇合適的安老服務，並且重視安老院舍的服務質素，有見及此，香港賽馬會慈善信託基金捐助香港老年學會，推出為期三年的「賽馬會護老易學習計劃」，透過建立及活用網上平台，協助提升從事安老服務人員的服務質素以及提升大眾對選擇優質安老院舍的認識。</string>
 </resources>
