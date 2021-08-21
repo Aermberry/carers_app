@@ -6,6 +6,7 @@
     <dimen name="font_27">27sp</dimen>
 
     <!--edge distance-->
+    <dimen name="font_22">22sp</dimen>
     <dimen name="padding_11">11dp</dimen>
     <dimen name="padding_14">14dp</dimen>
     <dimen name="padding_15">15dp</dimen>

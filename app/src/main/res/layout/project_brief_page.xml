@@ -64,7 +64,7 @@
                 android:background="@color/themLightColor"
                 android:gravity="center"
                 android:text="@string/project_brief_title"
-                android:textColor="@color/themColor"
+                android:textColor="#009688"
                 android:textSize="@dimen/font_27"
                 android:textStyle="bold" />
 
@@ -114,11 +114,32 @@
         <!-- 簡介內容-->
 
         <TextView
-            android:paddingHorizontal="@dimen/padding_20"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:paddingHorizontal="@dimen/padding_20"
             android:text="@string/project_brief"
             android:textColor="@color/white"
             android:textSize="@dimen/font_18" />
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:scaleType="fitXY"
+            android:src="@drawable/decoration" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="@color/griaty_teal_700"
+            >
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/font_22"
+                android:textStyle="bold"
+                android:textColor="@color/white"
+                android:text="@string/project_introduce_title"
+                />
+        </LinearLayout>
     </LinearLayout>
 </ScrollView>
