@@ -37,4 +37,12 @@
     <string name="project_brief_title">計劃簡介</string>
     <string name="project_brief">隨著香港人口持續老化，安老服務需求與日俱增，大眾關注如何選擇合適的安老服務，並且重視安老院舍的服務質素，有見及此，香港賽馬會慈善信託基金捐助香港老年學會，推出為期三年的「賽馬會護老易學習計劃」，透過建立及活用網上平台，協助提升從事安老服務人員的服務質素以及提升大眾對選擇優質安老院舍的認識。</string>
     <string name="project_introduce_title">計劃目的：</string>
+    <string name="number_1">1.</string>
+    <string name="number_1_content">透過課堂學習及實地指導提升院舍管理及專業護理的知識</string>
+    <string name="number_2">2.</string>
+    <string name="number_2_content">加強前線員工的實務照顧及護理技巧</string>
+    <string name="number_3">3.</string>
+    <string name="number_3_content">啟發安老服務員工透過網上平台持續學習</string>
+    <string name="number_4">4.</string>
+    <string name="number_4_content">"透過社區講座、展覽及手機應用程式認識如何選擇優質安老院舍 "</string>
 </resources>
