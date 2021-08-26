@@ -34,4 +34,6 @@
     <dimen name="padding_36">36dp</dimen>
     <dimen name="font_25">25sp</dimen>
     <dimen name="padding_43">43dp</dimen>
+    <dimen name="padding_106">106dp</dimen>
+    <dimen name="padding_60">60dp</dimen>
 </resources>

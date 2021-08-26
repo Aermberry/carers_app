@@ -251,15 +251,14 @@
 
 
         </LinearLayout>
-
+        <!--网上学习平台-->
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:background="@color/pink"
             android:orientation="vertical"
-            android:paddingVertical="@dimen/padding_43"
-            >
-
+            android:paddingVertical="@dimen/padding_43">
+            <!--标题-->
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -270,30 +269,47 @@
                     android:layout_height="match_parent"
                     android:background="@drawable/shape_50dp_red_background_corners"
                     android:orientation="horizontal"
-                    android:paddingVertical="@dimen/padding_20"
-                    >
+                    android:paddingVertical="@dimen/padding_20">
 
                     <TextView
-                        android:layout_marginHorizontal="@dimen/padding_10"
                         android:layout_width="@dimen/padding_36"
                         android:layout_height="@dimen/padding_36"
-                        android:text="@string/project_number_01"
                         android:layout_gravity="center"
-                        android:textColor="@color/white"
+                        android:layout_marginHorizontal="@dimen/padding_10"
+                        android:background="@drawable/shape_circle_white"
                         android:gravity="center"
-                        android:textSize="@dimen/font_18"
-                        android:background="@drawable/shape_circle_white" />
+                        android:text="@string/project_number_01"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/font_18" />
+
                     <TextView
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
-                        android:textColor="@color/white"
-                        android:textSize="@dimen/font_25"
                         android:text="@string/networkLearningString"
-                        />
-
-
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/font_25" />
                 </LinearLayout>
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:scaleType="fitCenter"
+                    android:src="@drawable/icon_project_onlinelearning" />
             </LinearLayout>
+            <!-- 细节点-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingVertical="@dimen/padding_20"
+                >
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/font_27"
+                    android:text="@string/online_learning_point01"
+                    />
+            </LinearLayout>
+
+
         </LinearLayout>
     </LinearLayout>
 </ScrollView>
