@@ -47,5 +47,9 @@
     <string name="number_4_content">"透過社區講座、展覽及手機應用程式認識如何選擇優質安老院舍 "</string>
     <string name="networkLearningString">網上學習平台</string>
     <string name="project_number_01">1</string>
-    <string name="online_learning_point01">網站、手機應用程式垮平台學習</string>
+    <string name="online_learning_point01">• 網站、手機應用程式垮平台學習</string>
+    <string name="online_learning_point02">• 提供護老知識及安老服務資訊</string>
+    <string name="online_learning_point03">• 隨時隨地持續進修</string>
+    <string name="project_number_02">2</string>
+    <string name="classroomLearningString">課堂學習</string>
 </resources>

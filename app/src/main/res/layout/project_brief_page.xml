@@ -54,7 +54,6 @@
                     android:contentDescription="@string/app_name"
                     android:scaleType="fitXY"
                     app:srcCompat="@drawable/telephone" />
-
             </RelativeLayout>
 
             <TextView
@@ -255,61 +254,180 @@
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:background="@color/pink"
-            android:orientation="vertical"
-            android:paddingVertical="@dimen/padding_43">
-            <!--标题-->
+            android:background="@color/red"
+            android:paddingBottom="@dimen/padding_10">
+
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:orientation="horizontal">
-
+                android:background="@color/pink"
+                android:orientation="vertical"
+                android:paddingVertical="@dimen/padding_43">
+                <!--标题-->
                 <LinearLayout
-                    android:layout_width="@dimen/padding_246"
-                    android:layout_height="match_parent"
-                    android:background="@drawable/shape_50dp_red_background_corners"
-                    android:orientation="horizontal"
-                    android:paddingVertical="@dimen/padding_20">
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
 
-                    <TextView
-                        android:layout_width="@dimen/padding_36"
-                        android:layout_height="@dimen/padding_36"
-                        android:layout_gravity="center"
-                        android:layout_marginHorizontal="@dimen/padding_10"
-                        android:background="@drawable/shape_circle_white"
-                        android:gravity="center"
-                        android:text="@string/project_number_01"
-                        android:textColor="@color/white"
-                        android:textSize="@dimen/font_18" />
+                    <LinearLayout
+                        android:layout_width="@dimen/padding_246"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/shape_50dp_red_background_corners"
+                        android:orientation="horizontal"
+                        android:paddingVertical="@dimen/padding_20">
+
+                        <TextView
+                            android:layout_width="@dimen/padding_36"
+                            android:layout_height="@dimen/padding_36"
+                            android:layout_gravity="center"
+                            android:layout_marginHorizontal="@dimen/padding_10"
+                            android:background="@drawable/shape_circle_white"
+                            android:gravity="center"
+                            android:text="@string/project_number_01"
+                            android:textColor="@color/white"
+                            android:textSize="@dimen/font_18" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:text="@string/networkLearningString"
+                            android:textColor="@color/white"
+                            android:textSize="@dimen/font_25" />
+                    </LinearLayout>
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:scaleType="fitCenter"
+                        android:src="@drawable/icon_project_onlinelearning" />
+                </LinearLayout>
+                <!-- 细节点-->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:paddingVertical="@dimen/padding_20"
+                    android:paddingLeft="@dimen/padding_20">
 
                     <TextView
                         android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        android:text="@string/networkLearningString"
-                        android:textColor="@color/white"
-                        android:textSize="@dimen/font_25" />
-                </LinearLayout>
+                        android:layout_height="@dimen/font_18"
+                        android:layout_marginVertical="@dimen/padding_5"
+                        android:text="@string/online_learning_point01"
+                        android:textStyle="bold" />
 
-                <ImageView
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:scaleType="fitCenter"
-                    android:src="@drawable/icon_project_onlinelearning" />
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/font_18"
+                        android:layout_marginVertical="@dimen/padding_5"
+                        android:text="@string/online_learning_point02"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/font_18"
+                        android:layout_marginVertical="@dimen/padding_5"
+                        android:text="@string/online_learning_point03"
+                        android:textStyle="bold" />
+                </LinearLayout>
             </LinearLayout>
-            <!-- 细节点-->
+        </LinearLayout>
+        <!-- Classroom learning -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/yellow"
+            android:paddingBottom="@dimen/padding_10">
+
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:paddingVertical="@dimen/padding_20"
-                >
-                <TextView
+                android:background="@color/lightYellow"
+                android:orientation="vertical"
+                android:paddingVertical="@dimen/padding_43">
+                <!--标题-->
+                <LinearLayout
                     android:layout_width="match_parent"
-                    android:layout_height="@dimen/font_27"
-                    android:text="@string/online_learning_point01"
-                    />
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:gravity="right"
+                    >
+                    <ImageView
+                        android:paddingStart="@dimen/padding_20"
+                        android:paddingLeft="@dimen/padding_20"
+                        android:paddingEnd="@dimen/padding_10"
+                        android:paddingRight="@dimen/padding_10"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:scaleType="fitCenter"
+                        android:src="@drawable/icon_project_light" />
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        />
+                    <LinearLayout
+                        android:layout_width="@dimen/padding_198"
+                        android:layout_height="@dimen/padding_76"
+                        android:background="@drawable/shape_50dp_yellow_background_corners"
+                        android:orientation="horizontal"
+                        android:paddingLeft="@dimen/padding_10"
+                        android:paddingStart="@dimen/padding_10"
+                        android:paddingRight="@dimen/padding_10"
+                        android:paddingEnd="@dimen/padding_10"
+                        >
+
+                        <TextView
+                            android:layout_width="@dimen/padding_36"
+                            android:layout_height="match_parent"
+                            android:layout_gravity="center"
+                            android:layout_marginHorizontal="@dimen/padding_10"
+                            android:background="@drawable/shape_circle_white"
+                            android:gravity="center"
+                            android:text="@string/project_number_02"
+                            android:textColor="@color/white"
+                            android:textSize="@dimen/font_18" />
+
+                        <TextView
+                            android:gravity="center"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:text="@string/classroomLearningString"
+                            android:textColor="@color/white"
+                            android:textSize="@dimen/font_25" />
+                    </LinearLayout>
+                </LinearLayout>
+                <!-- 细节点-->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:paddingVertical="@dimen/padding_20"
+                    android:paddingLeft="@dimen/padding_20">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/font_18"
+                        android:layout_marginVertical="@dimen/padding_5"
+                        android:text="@string/online_learning_point01"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/font_18"
+                        android:layout_marginVertical="@dimen/padding_5"
+                        android:text="@string/online_learning_point02"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/font_18"
+                        android:layout_marginVertical="@dimen/padding_5"
+                        android:text="@string/online_learning_point03"
+                        android:textStyle="bold" />
+                </LinearLayout>
             </LinearLayout>
-
-
         </LinearLayout>
+
     </LinearLayout>
 </ScrollView>

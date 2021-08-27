@@ -18,4 +18,7 @@
     <color name="text">#565555</color>
     <color name="pink">#FFE2E2</color>
     <color name="red">#F97C7A</color>
+    <color name="yellow">#EF8E11</color>
+    <color name="lightYellow">#FFDAAA</color>
+
 </resources>

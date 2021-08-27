@@ -36,4 +36,6 @@
     <dimen name="padding_43">43dp</dimen>
     <dimen name="padding_106">106dp</dimen>
     <dimen name="padding_60">60dp</dimen>
+    <dimen name="padding_198">198dp</dimen>
+    <dimen name="padding_76">76dp</dimen>
 </resources>
