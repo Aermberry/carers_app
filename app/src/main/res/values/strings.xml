@@ -52,4 +52,8 @@
     <string name="online_learning_point03">• 隨時隨地持續進修</string>
     <string name="project_number_02">2</string>
     <string name="classroomLearningString">課堂學習</string>
+    <string name="setting_title_name">設定</string>
+    <string name="setting_label_notification">通知</string>
+    <string name="setting_label_private_policy">私營政策</string>
+    <string name="setting_label_intellectual">知識產權告示</string>
 </resources>

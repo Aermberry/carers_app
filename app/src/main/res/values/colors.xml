@@ -20,5 +20,6 @@
     <color name="red">#F97C7A</color>
     <color name="yellow">#EF8E11</color>
     <color name="lightYellow">#FFDAAA</color>
+    <color name="grayBorder">#3B565555</color>
 
 </resources>

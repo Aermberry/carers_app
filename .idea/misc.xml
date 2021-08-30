@@ -3,16 +3,33 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="../../../../layout/custom_preview.xml" value="0.2824074074074074" />
+        <entry key="app/src/main/res/drawable-v24/ic_launcher_foreground.xml" value="0.22592592592592592" />
         <entry key="app/src/main/res/drawable/ic_launcher_background.xml" value="0.35520833333333335" />
+        <entry key="app/src/main/res/drawable/selector.xml" value="0.22592592592592592" />
         <entry key="app/src/main/res/drawable/shape_10dp_corners.xml" value="0.35520833333333335" />
         <entry key="app/src/main/res/drawable/shape_50dp_red_background_corners.xml" value="0.35520833333333335" />
         <entry key="app/src/main/res/drawable/shape_50dp_yellow_background_corners.xml" value="0.3194444444444444" />
         <entry key="app/src/main/res/drawable/shape_circle_white.xml" value="0.35520833333333335" />
         <entry key="app/src/main/res/drawable/shape_white_10dp_corners.xml" value="0.35520833333333335" />
         <entry key="app/src/main/res/drawable/shape_yellow_10dp_corners.xml" value="0.35520833333333335" />
+        <entry key="app/src/main/res/drawable/switch_ios_thumb.xml" value="0.22592592592592592" />
+        <entry key="app/src/main/res/drawable/switch_ios_track_off.xml" value="0.3770833333333333" />
+        <entry key="app/src/main/res/drawable/switch_ios_track_on.xml" value="0.22592592592592592" />
+        <entry key="app/src/main/res/drawable/switch_ios_track_selector.xml" value="0.22592592592592592" />
+        <entry key="app/src/main/res/drawable/switch_rectangle_thumb_off.xml" value="0.22592592592592592" />
+        <entry key="app/src/main/res/drawable/switch_rectangle_thumb_on.xml" value="0.22592592592592592" />
+        <entry key="app/src/main/res/drawable/switch_rectangle_thumb_selector.xml" value="0.22592592592592592" />
+        <entry key="app/src/main/res/drawable/switch_rectangle_track.xml" value="0.22592592592592592" />
         <entry key="app/src/main/res/drawable/yellow_round_background.xml" value="0.35520833333333335" />
+        <entry key="app/src/main/res/layout-v28/workshop_brief_page.xml" value="0.1160081053698075" />
+        <entry key="app/src/main/res/layout/app_setting_page.xml" value="0.2359375" />
+        <entry key="app/src/main/res/layout/beadhouse_page.xml" value="0.17553191489361702" />
         <entry key="app/src/main/res/layout/contact_information_page.xml" value="0.1675925925925926" />
+        <entry key="app/src/main/res/layout/home_navigation.xml" value="0.11474164133738601" />
+        <entry key="app/src/main/res/layout/latest_events_page.xml" value="0.17553191489361702" />
         <entry key="app/src/main/res/layout/project_brief_page.xml" value="0.13768115942028986" />
+        <entry key="app/src/main/res/layout/workshop_brief_page.xml" value="0.1160081053698075" />
       </map>
     </option>
   </component>

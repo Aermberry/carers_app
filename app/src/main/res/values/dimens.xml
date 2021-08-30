@@ -38,4 +38,10 @@
     <dimen name="padding_60">60dp</dimen>
     <dimen name="padding_198">198dp</dimen>
     <dimen name="padding_76">76dp</dimen>
+    <dimen name="padding_0">0dp</dimen>
+    <dimen name="font_40">40sp</dimen>
+    <dimen name="padding_1">1dp</dimen>
+    <dimen name="padding_25">25dp</dimen>
+    <dimen name="padding_4">4dp</dimen>
+    <dimen name="padding_83">83dp</dimen>
 </resources>

@@ -27,7 +27,7 @@
         <activity android:name=".information.ui.project_brief.ProjectBriefActivity" />
         <activity android:name=".information.ui.website_information.WebsiteInformationActivity" />
         <activity android:name=".information.ui.workshop_brief.WorkshopBriefActivity" />
-        <activity android:name=".setting.app_setting.AppSettingActivity" />
+        <activity android:name=".setting.ui.setting.AppSettingActivity" />
     </application>
 
 </manifest>

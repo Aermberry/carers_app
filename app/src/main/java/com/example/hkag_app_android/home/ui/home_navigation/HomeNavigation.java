@@ -22,6 +22,7 @@ import com.example.hkag_app_android.information.ui.project_brief.ProjectBriefAct
 import com.example.hkag_app_android.information.ui.video_play.VideoPlayActivity;
 import com.example.hkag_app_android.information.ui.website_information.WebsiteInformationActivity;
 import com.example.hkag_app_android.information.ui.workshop_brief.WorkshopBriefActivity;
+import com.example.hkag_app_android.setting.ui.setting.AppSettingActivity;
 
 
 public class HomeNavigation extends AppCompatActivity {
@@ -93,4 +94,7 @@ public class HomeNavigation extends AppCompatActivity {
     }
 
 
+    public void onNavigateToSettingPage(View view) {
+        startActivity(new Intent(HomeNavigation.this, AppSettingActivity.class));
+    }
 }

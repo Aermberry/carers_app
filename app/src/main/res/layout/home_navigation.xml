@@ -28,8 +28,13 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:paddingLeft="23dp"
+                android:paddingRight="@dimen/padding_0"
                 android:paddingTop="38dp"
-                app:srcCompat="@drawable/setting_button" />
+                app:srcCompat="@drawable/setting_button"
+                android:paddingStart="23dp"
+                android:paddingEnd="@dimen/padding_0"
+                android:onClick="onNavigateToSettingPage"
+                />
 
             <LinearLayout
                 android:id="@+id/imageLayout"
