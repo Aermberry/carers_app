@@ -1,19 +1,20 @@
 package com.example.hkag_app_android.setting.ui.setting;
 
+import android.annotation.SuppressLint;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.CompoundButton;
 import android.widget.Switch;
 import android.widget.Toast;
 
-import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
-import androidx.core.app.ActivityCompat;
 
 import com.example.hkag_app_android.R;
 
 public class AppSettingActivity extends AppCompatActivity {
 
+
+    @SuppressLint("UseSwitchCompatOrMaterialCode")
     Switch switchButton;
 
     @Override
