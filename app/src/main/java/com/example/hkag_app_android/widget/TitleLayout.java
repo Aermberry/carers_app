@@ -1,9 +1,8 @@
-package com.example.hkag_app_android.demo;
+package com.example.hkag_app_android.widget;
 
 import android.app.Activity;
 import android.content.Context;
 import android.content.res.TypedArray;
-import android.nfc.Tag;
 import android.util.AttributeSet;
 import android.util.Log;
 import android.view.LayoutInflater;
@@ -22,13 +21,13 @@ public class TitleLayout extends LinearLayout {
 
     public TitleLayout(Context context, @Nullable AttributeSet attrs) {
         super(context, attrs);
-        LayoutInflater.from(context).inflate(R.layout.title_component, this);
+        LayoutInflater.from(context).inflate(R.layout.view_title_demo, this);
 
         TypedArray ta = context.obtainStyledAttributes(attrs, R.styleable.TitleLayout);
         int cout = ta.getIndexCount();
         String title = ta.getNonResourceString(R.styleable.TitleLayout_title);
         Log.d(TAG, title);
-
+        ta.recycle();
         Button titleBack = (Button) findViewById(R.id.title_back);
         Button titleEdit = (Button) findViewById(R.id.title_edit);
         TextView titleText=(TextView) findViewById(R.id.title_text);

@@ -12,7 +12,7 @@ import android.widget.Toast;
 import androidx.appcompat.app.AppCompatActivity;
 
 import com.example.hkag_app_android.R;
-import com.example.hkag_app_android.domain.NavigationItem;
+import com.example.hkag_app_android.home.domain.NavigationItem;
 import com.example.hkag_app_android.information.ui.beadhouse_information.BeadHouseActivity;
 import com.example.hkag_app_android.home.ui.home_navigation.widget.NavigationAdapter;
 import com.example.hkag_app_android.information.ui.contact_information.ContactInformationActivity;
@@ -33,7 +33,7 @@ public class HomeNavigation extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 
-        setContentView(R.layout.home_navigation);
+        setContentView(R.layout.activity_home_navigation);
 
         _navigationItemListView = (ListView) findViewById(R.id.navigationItemList);
 
@@ -47,7 +47,7 @@ public class HomeNavigation extends AppCompatActivity {
                 new NavigationItem(R.drawable.project_icon, "計劃簡介"),
                 new NavigationItem(R.drawable.contact_icon, "聯絡我們")};
 
-        NavigationAdapter navigationAdapter = new NavigationAdapter(this, R.layout.navigation_item, data);
+        NavigationAdapter navigationAdapter = new NavigationAdapter(this, R.layout.item_navigation, data);
         _navigationItemListView.setAdapter(navigationAdapter);
 
         _navigationItemListView.setOnTouchListener((v, event) -> (event.getAction() == MotionEvent.ACTION_MOVE));

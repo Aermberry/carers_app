@@ -4,13 +4,8 @@ import android.os.Bundle;
 import android.view.View;
 
 import androidx.appcompat.app.AppCompatActivity;
-import androidx.fragment.app.Fragment;
-import androidx.viewpager.widget.ViewPager;
 
 import com.example.hkag_app_android.R;
-import com.google.android.material.tabs.TabLayout;
-
-import java.util.ArrayList;
 
 public class BeadHouseActivity extends AppCompatActivity {
 
@@ -19,7 +14,7 @@ public class BeadHouseActivity extends AppCompatActivity {
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 
-        setContentView(R.layout.beadhouse_page);
+        setContentView(R.layout.activity_beadhouse);
 
     }
 

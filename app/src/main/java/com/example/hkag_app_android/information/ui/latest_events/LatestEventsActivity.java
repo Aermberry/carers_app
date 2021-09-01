@@ -12,7 +12,7 @@ public class LatestEventsActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.latest_events_page);
+        setContentView(R.layout.activity_latest_events);
     }
 
     public void onBackToHomeNavigationPage(View view) {

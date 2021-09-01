@@ -13,7 +13,7 @@ public class ContactInformationActivity extends AppCompatActivity {
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 
-        setContentView(R.layout.contact_information_page);
+        setContentView(R.layout.activity_contact_information);
     }
 
     public void onBackToHomeNavigationPage(View view) {

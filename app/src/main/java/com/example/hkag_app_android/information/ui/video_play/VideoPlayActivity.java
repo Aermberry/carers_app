@@ -13,7 +13,7 @@ public class VideoPlayActivity extends AppCompatActivity {
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 
-        setContentView(R.layout.video_play_page);
+        setContentView(R.layout.activity_video_play);
 
     }
 

@@ -21,7 +21,7 @@ public class AppSettingActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 
-        setContentView(R.layout.app_setting_page);
+        setContentView(R.layout.activity_app_setting);
 
         switchButton = (Switch) findViewById(R.id.switch_button);
 

@@ -14,7 +14,7 @@ public class ProjectBriefActivity extends AppCompatActivity {
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 
-        setContentView(R.layout.project_brief_page);
+        setContentView(R.layout.activity_project_brief);
     }
 
     public void onBackToHomeNavigationPage(View view) {

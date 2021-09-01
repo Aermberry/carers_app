@@ -14,7 +14,7 @@ public class WebsiteInformationActivity extends AppCompatActivity {
     public void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 
-        setContentView(R.layout.website_information_page);
+        setContentView(R.layout.activity_website_information);
     }
 
     public void onBackToHomeNavigationPage(View view) {

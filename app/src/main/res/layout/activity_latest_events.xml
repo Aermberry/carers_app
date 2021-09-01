@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:scrollbars="none">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <!--返回按鈕-->
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="25dp"
+            android:layout_marginLeft="25dp"
+            android:layout_marginTop="28dp"
+            android:background="?android:selectableItemBackground"
+            android:contentDescription="@string/action_settings"
+            android:onClick="onBackToHomeNavigationPage"
+            app:srcCompat="@drawable/back_button" />
+
+        <!--標題-->
+        <com.example.hkag_app_android.widget.TitleView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:title="@string/contact_title"
+            app:image="@drawable/last_event"
+            />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingHorizontal="@dimen/padding_11">
+            <!--    簡介文字-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingHorizontal="@dimen/padding_15"
+                android:paddingVertical="@dimen/padding_26">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="舉辦社區展覽的目的是為公眾提供安老服務\n資訊，推廣選擇安老院舍的相關知識。\n\n
+本計劃亦會到香港各區長者中心提供護老資\n訊講座，有興趣參與機構或團體可與本計劃聯絡。"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/font_18" />
+            </LinearLayout>
+            　
+
+            <!--按鈕-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/shape_yellow_10dp_corners"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:paddingVertical="@dimen/padding_17">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/icon_open_external_link" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingStart="@dimen/padding_20"
+                    android:paddingLeft="@dimen/padding_20"
+                    android:paddingEnd="@dimen/padding_20"
+                    android:paddingRight="@dimen/padding_20"
+                    android:text="@string/contact_button" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/padding_20" />
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:src="@drawable/event_image_01" />
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:src="@drawable/event_image_02" />
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:src="@drawable/event_image_03" />
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+</ScrollView>

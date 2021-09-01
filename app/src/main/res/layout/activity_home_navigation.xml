@@ -7,7 +7,7 @@
     <!--顶部视图-->
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
+        android:layout_height="wrap_content"
         android:orientation="vertical">
 
         <RelativeLayout
@@ -75,6 +75,6 @@
             android:scrollbars="none" />
 
         <!--底图视图-->
-        <include layout="@layout/introduction_component"/>
+        <include layout="@layout/view_introduction"/>
     </LinearLayout>
 </ScrollView>

@@ -12,7 +12,7 @@ public class OnlineLearningBriefActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 
-        setContentView(R.layout.online_learning_brief_page);
+        setContentView(R.layout.activity_online_learning_brief);
     }
 
     public void onBackToHomeNavigationPage(View view) {

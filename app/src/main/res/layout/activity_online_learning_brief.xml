@@ -8,6 +8,7 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:paddingBottom="@dimen/padding_20"
         android:orientation="vertical">
         <!--返回按鈕-->
 
@@ -22,77 +23,51 @@
             android:onClick="onBackToHomeNavigationPage"
             app:srcCompat="@drawable/back_button" />
         <!--標題-->
-        <LinearLayout
+        <com.example.hkag_app_android.widget.TitleView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="vertical">
-            <!--圖標icon-->
-            <RelativeLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:gravity="center"
-                android:orientation="vertical">
+            app:title="@string/online_learning_brief_title"
+            app:image="@drawable/books"  />
 
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="85dp"
-                    android:background="@color/themLightColor" />
-
-                <LinearLayout
-                    android:id="@+id/space"
-                    android:layout_width="match_parent"
-                    android:layout_height="33dp"
-                    android:layout_alignParentTop="true"
-                    android:background="@color/themColor"
-                    android:orientation="horizontal" />
-
-                <ImageView
-                    android:layout_width="56dp"
-                    android:layout_height="56dp"
-                    android:layout_centerHorizontal="true"
-                    android:contentDescription="@string/app_name"
-                    android:scaleType="fitXY"
-                    app:srcCompat="@drawable/last_event" />
-
-            </RelativeLayout>
-
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:height="100dp"
-                android:background="@color/themLightColor"
-                android:gravity="center"
-                android:text="@string/contact_title"
-                android:textColor="@color/themColor"
-                android:textSize="@dimen/font_27"
-                android:textStyle="bold" />
-        </LinearLayout>
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingVertical="@dimen/padding_40"
+            android:src="@drawable/online_learning_cover" />
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="vertical"
-            android:paddingHorizontal="@dimen/padding_11">
+            android:paddingHorizontal="@dimen/padding_11"
+            >
+
             <!--    簡介文字-->
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:orientation="horizontal"
                 android:paddingHorizontal="@dimen/padding_15"
-                android:paddingVertical="@dimen/padding_26">
+                >
 
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="舉辦社區展覽的目的是為公眾提供安老服務\n資訊，推廣選擇安老院舍的相關知識。\n\n
-本計劃亦會到香港各區長者中心提供護老資\n訊講座，有興趣參與機構或團體可與本計劃聯絡。"
+                    android:text="「院舍網上學習平台」是一個為院舍員工而\n設的網上自我學習平台，提供實務技巧課程\n及安老服務資訊，鼓勵員工隨時隨地持續進\n修。\n\n
+有興趣參與計劃的院舍，可與本計劃聯絡。"
                     android:textColor="@color/white"
-                    android:textSize="@dimen/font_18" />
+                    android:textSize="@dimen/font_18"
+                    android:textStyle="bold" />
             </LinearLayout>
-            　
 
-            <!--按鈕-->
             <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:minHeight="@dimen/padding_20"
+                />
+            <!--        網頁跳轉按鈕　-->
+            <LinearLayout
+                android:paddingTop="@dimen/padding_24"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:background="@drawable/shape_yellow_10dp_corners"
@@ -112,28 +87,37 @@
                     android:paddingLeft="@dimen/padding_20"
                     android:paddingEnd="@dimen/padding_20"
                     android:paddingRight="@dimen/padding_20"
-                    android:text="@string/contact_button" />
+                    android:text="@string/online_learning_button" />
             </LinearLayout>
-
             <LinearLayout
                 android:layout_width="match_parent"
-                android:layout_height="@dimen/padding_20" />
+                android:layout_height="wrap_content"
+                android:minHeight="@dimen/padding_20"
+                />
 
-            <ImageView
+            <!--        頁面跳轉按鈕-->
+            <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:src="@drawable/event_image_01" />
+                android:background="@drawable/shape_yellow_10dp_corners"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:paddingVertical="@dimen/padding_17">
 
-            <ImageView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:src="@drawable/event_image_02" />
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/phone_call" />
 
-            <ImageView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:src="@drawable/event_image_03" />
-
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingStart="@dimen/padding_20"
+                    android:paddingLeft="@dimen/padding_20"
+                    android:paddingEnd="@dimen/padding_20"
+                    android:paddingRight="@dimen/padding_20"
+                    android:text="@string/contact_button" />
+            </LinearLayout>
         </LinearLayout>
 
 

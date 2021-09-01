@@ -1,4 +1,4 @@
-package com.example.hkag_app_android.domain;
+package com.example.hkag_app_android.home.domain;
 
 public class NavigationItem {
     int image;

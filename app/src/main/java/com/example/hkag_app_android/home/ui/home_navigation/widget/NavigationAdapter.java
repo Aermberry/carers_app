@@ -12,7 +12,7 @@ import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 
 import com.example.hkag_app_android.R;
-import com.example.hkag_app_android.domain.NavigationItem;
+import com.example.hkag_app_android.home.domain.NavigationItem;
 
 public class NavigationAdapter extends ArrayAdapter<NavigationItem> {
     private final int mResource;

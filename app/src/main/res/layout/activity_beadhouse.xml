@@ -23,52 +23,12 @@
             android:onClick="onBackToHomeNavigationPage"
             />
         <!--標題-->
-        <LinearLayout
+        <com.example.hkag_app_android.widget.TitleView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="vertical">
-            <!--圖標icon-->
-            <RelativeLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:gravity="center"
-                android:orientation="vertical">
+            app:title="@string/beadhouse_title"
+            app:image="@drawable/beadhouse" />
 
-
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="85dp"
-                    android:background="@color/themLightColor" />
-
-                <LinearLayout
-                    android:id="@+id/space"
-                    android:layout_width="match_parent"
-                    android:layout_height="33dp"
-                    android:layout_alignParentTop="true"
-                    android:background="@color/themColor"
-                    android:orientation="horizontal" />
-
-                <ImageView
-                    android:layout_width="56dp"
-                    android:layout_height="56dp"
-                    android:layout_centerHorizontal="true"
-                    android:contentDescription="@string/app_name"
-                    android:scaleType="fitXY"
-                    app:srcCompat="@drawable/beadhouse" />
-
-            </RelativeLayout>
-
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:height="100dp"
-                android:background="@color/themLightColor"
-                android:gravity="center"
-                android:text="@string/beadhouse_title"
-                android:textColor="@color/themColor"
-                android:textSize="@dimen/font_27"
-                android:textStyle="bold" />
-        </LinearLayout>
         <!--視頻-->
         <LinearLayout
             android:layout_width="match_parent"
