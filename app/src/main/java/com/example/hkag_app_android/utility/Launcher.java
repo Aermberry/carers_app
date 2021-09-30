@@ -1,6 +1,5 @@
 package com.example.hkag_app_android.utility;
 
-import android.app.Activity;
 import android.content.Context;
 import android.content.Intent;
 import android.net.Uri;

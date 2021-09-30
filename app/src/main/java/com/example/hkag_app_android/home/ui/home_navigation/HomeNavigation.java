@@ -23,11 +23,13 @@ import com.example.hkag_app_android.information.ui.video_play.VideoPlayActivity;
 import com.example.hkag_app_android.information.ui.website_information.WebsiteInformationActivity;
 import com.example.hkag_app_android.information.ui.workshop_brief.WorkshopBriefActivity;
 import com.example.hkag_app_android.setting.ui.setting.AppSettingActivity;
+import com.example.hkag_app_android.utility.Launcher;
 
 
 public class HomeNavigation extends AppCompatActivity {
-    ListView _navigationItemListView;
 
+    private ListView _navigationItemListView;
+    private Launcher _launcher = new Launcher();
 
     @SuppressLint("ClickableViewAccessibility")
     @Override
@@ -35,8 +37,6 @@ public class HomeNavigation extends AppCompatActivity {
         super.onCreate(savedInstanceState);
 
         setContentView(R.layout.activity_home_navigation);
-
-
 
 
         _navigationItemListView = (ListView) findViewById(R.id.navigationItemList);
@@ -57,48 +57,50 @@ public class HomeNavigation extends AppCompatActivity {
         _navigationItemListView.setOnTouchListener((v, event) -> (event.getAction() == MotionEvent.ACTION_MOVE));
 
         _navigationItemListView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+
+
             @Override
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
 
                 Toast.makeText(HomeNavigation.this, id + "", Toast.LENGTH_LONG).show();
 
-                Intent intent = null;
+                Class<?> _targetActivity = null;
 
                 switch ((int) id) {
                     case 0:
-                        intent = new Intent(HomeNavigation.this, BeadHouseActivity.class);
+                        _targetActivity = BeadHouseActivity.class;
                         break;
                     case 1:
-                        intent = new Intent(HomeNavigation.this, VideoPlayActivity.class);
+                        _targetActivity = VideoPlayActivity.class;
                         break;
                     case 2:
-                        intent = new Intent(HomeNavigation.this, OnLineLearningBriefActivity.class);
+                        _targetActivity = OnLineLearningBriefActivity.class;
                         break;
                     case 3:
-                        intent = new Intent(HomeNavigation.this, LatestEventsActivity.class);
+                        _targetActivity = LatestEventsActivity.class;
                         break;
                     case 4:
-                        intent = new Intent(HomeNavigation.this, WorkshopBriefActivity.class);
+                        _targetActivity = WorkshopBriefActivity.class;
                         break;
                     case 5:
-                        intent = new Intent(HomeNavigation.this, WebsiteInformationActivity.class);
+                        _targetActivity = WebsiteInformationActivity.class;
                         break;
                     case 6:
-                        intent = new Intent(HomeNavigation.this, ProjectBriefActivity.class);
+                        _targetActivity = ProjectBriefActivity.class;
                         break;
                     case 7:
-                        intent = new Intent(HomeNavigation.this, ContactInformationActivity.class);
+                        _targetActivity = ContactInformationActivity.class;
                         break;
                     default:
                         break;
                 }
-                startActivity(intent);
+                _launcher.navigateToPage(HomeNavigation.this, _targetActivity);
             }
         });
     }
 
 
     public void onNavigateToSettingPage(View view) {
-        startActivity(new Intent(HomeNavigation.this, AppSettingActivity.class));
+        _launcher.navigateToPage(HomeNavigation.this, AppSettingActivity.class);
     }
 }
