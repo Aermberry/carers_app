@@ -10,12 +10,14 @@ import android.widget.Toast;
 import androidx.appcompat.app.AppCompatActivity;
 
 import com.example.hkag_app_android.R;
+import com.example.hkag_app_android.utility.Launcher;
 
 public class AppSettingActivity extends AppCompatActivity {
 
+    private final Launcher _launcher = new Launcher();
 
     @SuppressLint("UseSwitchCompatOrMaterialCode")
-    Switch switchButton;
+    private Switch switchButton;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -35,6 +37,6 @@ public class AppSettingActivity extends AppCompatActivity {
     }
 
     public void onBackToHomeNavigationPage(View view) {
-        finish();
+        _launcher.pop(this);
     }
 }

@@ -7,8 +7,10 @@ import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
 
 import com.example.hkag_app_android.R;
+import com.example.hkag_app_android.utility.Launcher;
 
 public class WebsiteInformationActivity extends AppCompatActivity {
+    private final Launcher _urlLauncher = new Launcher();
 
     @Override
     public void onCreate(@Nullable Bundle savedInstanceState) {
@@ -18,6 +20,6 @@ public class WebsiteInformationActivity extends AppCompatActivity {
     }
 
     public void onBackToHomeNavigationPage(View view) {
-        finish();
+        _urlLauncher.pop(this);
     }
 }

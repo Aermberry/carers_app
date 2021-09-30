@@ -6,8 +6,10 @@ import android.view.View;
 import androidx.appcompat.app.AppCompatActivity;
 
 import com.example.hkag_app_android.R;
+import com.example.hkag_app_android.utility.Launcher;
 
 public class LatestEventsActivity extends AppCompatActivity {
+    private final Launcher _launcher = new Launcher();
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -16,6 +18,6 @@ public class LatestEventsActivity extends AppCompatActivity {
     }
 
     public void onBackToHomeNavigationPage(View view) {
-        finish();
+        _launcher.pop(this);
     }
 }

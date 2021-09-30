@@ -6,9 +6,10 @@ import android.view.View;
 import androidx.appcompat.app.AppCompatActivity;
 
 import com.example.hkag_app_android.R;
+import com.example.hkag_app_android.utility.Launcher;
 
 public class BeadHouseActivity extends AppCompatActivity {
-
+    private final Launcher _launcher = new Launcher();
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
@@ -19,6 +20,6 @@ public class BeadHouseActivity extends AppCompatActivity {
     }
 
     public void onBackToHomeNavigationPage(View view) {
-        finish();
+        _launcher.pop(this);
     }
 }

@@ -3,7 +3,6 @@ package com.example.hkag_app_android.information.ui.online_learning_brief;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
-import android.widget.Toast;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -13,8 +12,7 @@ import com.example.hkag_app_android.utility.Launcher;
 
 public class OnLineLearningBriefActivity extends AppCompatActivity {
 
-    private Button _networkLearningButton;
-    private Button _contactButton;
+    private final Launcher _urlLauncher = new Launcher();
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -27,8 +25,8 @@ public class OnLineLearningBriefActivity extends AppCompatActivity {
     }
 
     private void initView() {
-        _networkLearningButton = (Button) findViewById(R.id.network_learning_button);
-        _contactButton = (Button) findViewById(R.id.contact_us_button);
+        Button _networkLearningButton = (Button) findViewById(R.id.network_learning_button);
+        Button _contactButton = (Button) findViewById(R.id.contact_us_button);
 
 
         _networkLearningButton.setOnClickListener(new MyClickListener());
@@ -39,17 +37,16 @@ public class OnLineLearningBriefActivity extends AppCompatActivity {
 
     class MyClickListener implements View.OnClickListener {
 
-        private final Launcher mUrlLauncher = new Launcher();
 
         @Override
         public void onClick(View v) {
             switch (v.getId()) {
                 case R.id.network_learning_button:
-                    mUrlLauncher.openWebPage(OnLineLearningBriefActivity.this, "https://www.baidu.com");
+                    _urlLauncher.openWebPage(OnLineLearningBriefActivity.this, "https://www.baidu.com");
                     break;
 
                 case R.id.contact_us_button:
-                    mUrlLauncher.navigateToPage(OnLineLearningBriefActivity.this, ContactInformationActivity.class);
+                    _urlLauncher.navigateToPage(OnLineLearningBriefActivity.this, ContactInformationActivity.class);
                     break;
                 default:
                     break;
@@ -58,6 +55,6 @@ public class OnLineLearningBriefActivity extends AppCompatActivity {
     }
 
     public void onBackToHomeNavigationPage(View view) {
-        finish();
+        _urlLauncher.pop(this);
     }
 }

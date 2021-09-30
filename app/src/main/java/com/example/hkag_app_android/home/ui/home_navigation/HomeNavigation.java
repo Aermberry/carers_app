@@ -1,16 +1,12 @@
 package com.example.hkag_app_android.home.ui.home_navigation;
-
 import android.annotation.SuppressLint;
-import android.content.Intent;
 import android.os.Bundle;
 import android.view.MotionEvent;
 import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ListView;
 import android.widget.Toast;
-
 import androidx.appcompat.app.AppCompatActivity;
-
 import com.example.hkag_app_android.R;
 import com.example.hkag_app_android.home.domain.NavigationItem;
 import com.example.hkag_app_android.information.ui.beadhouse_information.BeadHouseActivity;
@@ -37,7 +33,6 @@ public class HomeNavigation extends AppCompatActivity {
         super.onCreate(savedInstanceState);
 
         setContentView(R.layout.activity_home_navigation);
-
 
         _navigationItemListView = (ListView) findViewById(R.id.navigationItemList);
 
