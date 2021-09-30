@@ -21,7 +21,7 @@
         </activity>
         <activity android:name=".information.ui.beadhouse_information.BeadHouseActivity" />
         <activity android:name=".information.ui.contact_information.ContactInformationActivity" />
-        <activity android:name=".information.ui.online_learning_brief.OnlineLearningBriefActivity" />
+        <activity android:name=".information.ui.online_learning_brief.OnLineLearningBriefActivity" />
         <activity android:name=".information.ui.latest_events.LatestEventsActivity" />
         <activity android:name=".information.ui.video_play.VideoPlayActivity" />
         <activity android:name=".information.ui.project_brief.ProjectBriefActivity" />

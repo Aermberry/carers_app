@@ -67,6 +67,7 @@
                 />
             <!--        網頁跳轉按鈕　-->
             <Button
+                android:id="@+id/network_learning_button"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="@string/to_network_learning"
@@ -85,6 +86,7 @@
 
             <!--        頁面跳轉按鈕-->
             <Button
+                android:id="@+id/contact_us_button"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="@string/connect_us"

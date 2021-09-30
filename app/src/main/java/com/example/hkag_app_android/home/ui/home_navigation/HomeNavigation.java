@@ -3,11 +3,9 @@ package com.example.hkag_app_android.home.ui.home_navigation;
 import android.annotation.SuppressLint;
 import android.content.Intent;
 import android.os.Bundle;
-import android.text.Layout;
 import android.view.MotionEvent;
 import android.view.View;
 import android.widget.AdapterView;
-import android.widget.Button;
 import android.widget.ListView;
 import android.widget.Toast;
 
@@ -19,7 +17,7 @@ import com.example.hkag_app_android.information.ui.beadhouse_information.BeadHou
 import com.example.hkag_app_android.home.ui.home_navigation.widget.NavigationAdapter;
 import com.example.hkag_app_android.information.ui.contact_information.ContactInformationActivity;
 import com.example.hkag_app_android.information.ui.latest_events.LatestEventsActivity;
-import com.example.hkag_app_android.information.ui.online_learning_brief.OnlineLearningBriefActivity;
+import com.example.hkag_app_android.information.ui.online_learning_brief.OnLineLearningBriefActivity;
 import com.example.hkag_app_android.information.ui.project_brief.ProjectBriefActivity;
 import com.example.hkag_app_android.information.ui.video_play.VideoPlayActivity;
 import com.example.hkag_app_android.information.ui.website_information.WebsiteInformationActivity;
@@ -29,7 +27,7 @@ import com.example.hkag_app_android.setting.ui.setting.AppSettingActivity;
 
 public class HomeNavigation extends AppCompatActivity {
     ListView _navigationItemListView;
-    private Button _networkLearningButton;
+
 
     @SuppressLint("ClickableViewAccessibility")
     @Override
@@ -37,6 +35,7 @@ public class HomeNavigation extends AppCompatActivity {
         super.onCreate(savedInstanceState);
 
         setContentView(R.layout.activity_home_navigation);
+
 
 
 
@@ -73,7 +72,7 @@ public class HomeNavigation extends AppCompatActivity {
                         intent = new Intent(HomeNavigation.this, VideoPlayActivity.class);
                         break;
                     case 2:
-                        intent = new Intent(HomeNavigation.this, OnlineLearningBriefActivity.class);
+                        intent = new Intent(HomeNavigation.this, OnLineLearningBriefActivity.class);
                         break;
                     case 3:
                         intent = new Intent(HomeNavigation.this, LatestEventsActivity.class);
