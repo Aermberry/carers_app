@@ -9,6 +9,8 @@ import com.example.hkag_app_android.R;
 
 public class OnlineLearningBriefActivity extends AppCompatActivity {
     @Override
+
+
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 

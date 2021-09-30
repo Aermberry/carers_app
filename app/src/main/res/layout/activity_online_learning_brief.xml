@@ -66,29 +66,17 @@
                 android:minHeight="@dimen/padding_20"
                 />
             <!--        網頁跳轉按鈕　-->
-            <LinearLayout
-                android:paddingTop="@dimen/padding_24"
+            <Button
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:background="@drawable/shape_yellow_10dp_corners"
-                android:gravity="center"
-                android:orientation="horizontal"
-                android:paddingVertical="@dimen/padding_17">
-
-                <ImageView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:src="@drawable/icon_open_external_link" />
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:paddingStart="@dimen/padding_20"
-                    android:paddingLeft="@dimen/padding_20"
-                    android:paddingEnd="@dimen/padding_20"
-                    android:paddingRight="@dimen/padding_20"
-                    android:text="@string/online_learning_button" />
-            </LinearLayout>
+                android:text="@string/to_network_learning"
+                android:textColor="@color/text"
+                android:paddingVertical="@dimen/padding_10"
+                android:background="@drawable/shape_10dp_background"
+                android:drawableLeft="@drawable/icon_open_external_link"
+                android:paddingLeft="@dimen/padding_106"
+                android:paddingRight="@dimen/padding_106"
+                />
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -96,28 +84,22 @@
                 />
 
             <!--        頁面跳轉按鈕-->
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/connect_us"
+                android:textColor="@color/text"
+                android:paddingVertical="@dimen/padding_10"
+                android:background="@drawable/shape_10dp_background"
+                android:drawableLeft="@drawable/phone_call"
+                android:paddingLeft="@dimen/padding_106"
+                android:paddingRight="@dimen/padding_106"
+                />
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:background="@drawable/shape_yellow_10dp_corners"
-                android:gravity="center"
-                android:orientation="horizontal"
-                android:paddingVertical="@dimen/padding_17">
-
-                <ImageView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:src="@drawable/phone_call" />
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:paddingStart="@dimen/padding_20"
-                    android:paddingLeft="@dimen/padding_20"
-                    android:paddingEnd="@dimen/padding_20"
-                    android:paddingRight="@dimen/padding_20"
-                    android:text="@string/contact_button" />
-            </LinearLayout>
+                android:minHeight="@dimen/padding_20"
+                />
         </LinearLayout>
 
 
