@@ -63,6 +63,7 @@
                     android:layout_height="wrap_content"
                     android:text="@string/setting_label_notification"
                     android:textSize="@dimen/font_20"
+                    android:textColor="@color/text"
                     android:textStyle="bold" />
 
                 <Switch
@@ -79,111 +80,77 @@
                 android:layout_height="@dimen/padding_1"
                 android:background="@color/grayBorder" />
         </LinearLayout>
+
+
         <!--        私營政策-->
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="vertical">
+            android:orientation="vertical"
+            android:paddingStart="@dimen/padding_10"
+            android:paddingLeft="@dimen/padding_10"
+            android:paddingEnd="@dimen/padding_0"
+            android:paddingRight="@dimen/padding_0">
 
-            <LinearLayout
+            <Button
+                android:id="@+id/privacy_policy_button"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:gravity="center"
-                android:orientation="horizontal"
-                android:paddingVertical="@dimen/padding_20"
-                android:paddingStart="@dimen/padding_25"
-                android:paddingLeft="@dimen/padding_25"
-                android:paddingEnd="@dimen/padding_25"
-                android:paddingRight="@dimen/padding_25">
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="@string/setting_label_private_policy"
-                    android:textSize="@dimen/font_20"
-                    android:textStyle="bold" />
-
-                <LinearLayout
-                    android:layout_width="@dimen/padding_0"
-                    android:layout_height="match_parent"
-                    android:layout_weight="1" />
-
-                <ImageView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:paddingStart="@dimen/padding_0"
-                    android:paddingLeft="@dimen/padding_0"
-                    android:paddingEnd="@dimen/padding_10"
-                    android:paddingRight="@dimen/padding_10"
-                    android:scaleType="fitXY"
-                    android:src="@drawable/icon_setting_naviagation_to_other_page" />
-            </LinearLayout>
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="@dimen/padding_1"
-                android:background="@color/grayBorder" />
+                android:drawableRight="@drawable/icon_setting_naviagation_to_other_page"
+                android:gravity="start"
+                android:stateListAnimator="@null"
+                android:text="@string/setting_label_private_policy"
+                android:textAlignment="textStart"
+                android:textColor="@color/text"
+                android:textSize="@dimen/font_20"
+                android:textStyle="bold" />
         </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/padding_1"
+            android:background="@color/grayBorder" />
         <!--        知識產權告示-->
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="vertical">
+            android:orientation="vertical"
+            android:paddingStart="@dimen/padding_10"
+            android:paddingLeft="@dimen/padding_10"
+            android:paddingEnd="@dimen/padding_0"
+            android:paddingRight="@dimen/padding_0">
 
-            <LinearLayout
+            <Button
+                android:id="@+id/intellectual_property_notice_button"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:gravity="center"
-                android:orientation="horizontal"
-                android:paddingVertical="@dimen/padding_20"
-                android:paddingStart="@dimen/padding_25"
-                android:paddingLeft="@dimen/padding_25"
-                android:paddingEnd="@dimen/padding_25"
-                android:paddingRight="@dimen/padding_25">
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="@string/setting_label_intellectual"
-                    android:textSize="@dimen/font_20"
-                    android:textStyle="bold" />
-
-                <LinearLayout
-                    android:layout_width="@dimen/padding_0"
-                    android:layout_height="match_parent"
-                    android:layout_weight="1" />
-
-                <ImageView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:paddingStart="@dimen/padding_0"
-                    android:paddingLeft="@dimen/padding_0"
-                    android:paddingEnd="@dimen/padding_10"
-                    android:paddingRight="@dimen/padding_10"
-                    android:scaleType="fitXY"
-                    android:src="@drawable/icon_setting_naviagation_to_other_page" />
-            </LinearLayout>
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="@dimen/padding_1"
-                android:background="@color/grayBorder" />
+                android:drawableRight="@drawable/icon_setting_naviagation_to_other_page"
+                android:gravity="start"
+                android:stateListAnimator="@null"
+                android:text="@string/setting_label_intellectual"
+                android:textAlignment="textStart"
+                android:textColor="@color/text"
+                android:textSize="@dimen/font_20"
+                android:textStyle="bold" />
         </LinearLayout>
-
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/padding_1"
+            android:background="@color/grayBorder" />
 
     </LinearLayout>
+
     <LinearLayout
-        android:layout_marginTop="@dimen/padding_83"
-        android:paddingBottom="@dimen/padding_20"
-        android:paddingHorizontal="@dimen/padding_20"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
+        android:layout_marginTop="@dimen/padding_83"
         android:orientation="vertical"
-        >
+        android:paddingHorizontal="@dimen/padding_20"
+        android:paddingBottom="@dimen/padding_20">
+
         <ImageView
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:src="@drawable/setting_cover"
-            />
+            android:src="@drawable/setting_cover" />
     </LinearLayout>
 </LinearLayout>

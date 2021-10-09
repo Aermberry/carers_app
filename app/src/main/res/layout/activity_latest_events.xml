@@ -26,9 +26,8 @@
         <com.example.hkag_app_android.widget.TitleView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            app:title="@string/contact_title"
             app:image="@drawable/last_event"
-            />
+            app:title="@string/contact_title" />
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -51,30 +50,28 @@
                     android:textColor="@color/white"
                     android:textSize="@dimen/font_18" />
             </LinearLayout>
-            　
 
-            <!--按鈕-->
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:background="@drawable/shape_yellow_10dp_corners"
-                android:gravity="center"
-                android:orientation="horizontal"
-                android:paddingVertical="@dimen/padding_17">
-
-                <ImageView
-                    android:layout_width="wrap_content"
+                android:orientation="vertical">
+                <Button
+                    android:id="@+id/last_event_contact_us_button"
+                    android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:src="@drawable/icon_open_external_link" />
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:paddingStart="@dimen/padding_20"
-                    android:paddingLeft="@dimen/padding_20"
-                    android:paddingEnd="@dimen/padding_20"
-                    android:paddingRight="@dimen/padding_20"
-                    android:text="@string/contact_button" />
+                    android:background="@drawable/shape_10dp_background"
+                    android:drawableLeft="@drawable/phone_call"
+                    android:gravity="center_horizontal"
+                    android:paddingStart="@dimen/padding_120"
+                    android:paddingLeft="@dimen/padding_120"
+                    android:paddingEnd="@dimen/padding_100"
+                    android:paddingRight="@dimen/padding_100"
+                    android:stateListAnimator="@null"
+                    android:text="@string/setting_label_intellectual"
+                    android:textAlignment="center"
+                    android:textColor="@color/text"
+                    android:textSize="@dimen/font_20"
+                    android:textStyle="bold" />
             </LinearLayout>
 
             <LinearLayout

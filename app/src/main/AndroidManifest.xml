@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.example.hkag_app_android">
-
+    <uses-permission android:name="android.permission.INTERNET" />
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
@@ -27,6 +27,8 @@
         <activity android:name=".information.ui.website_information.WebsiteInformationActivity" />
         <activity android:name=".information.ui.workshop_brief.WorkshopBriefActivity" />
         <activity android:name=".setting.ui.setting.AppSettingActivity" />
+        <activity android:name=".setting.ui.webView.PrivacyPolicyActivity" />
+        <activity android:name=".setting.ui.webView.IntellectualPropertyNoticeActivity" />
     </application>
 
 </manifest>
