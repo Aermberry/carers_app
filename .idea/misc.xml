@@ -25,7 +25,9 @@
         <entry key="app/src/main/res/drawable/yellow_round_background.xml" value="0.35520833333333335" />
         <entry key="app/src/main/res/layout-v28/workshop_brief_page.xml" value="0.1160081053698075" />
         <entry key="app/src/main/res/layout/activity_app_setting.xml" value="0.253125" />
+        <entry key="app/src/main/res/layout/activity_beadhouse.xml" value="0.20572916666666666" />
         <entry key="app/src/main/res/layout/activity_contact_information.xml" value="0.28894927536231885" />
+        <entry key="app/src/main/res/layout/activity_home_navigation.xml" value="0.1" />
         <entry key="app/src/main/res/layout/activity_latest_events.xml" value="0.28894927536231885" />
         <entry key="app/src/main/res/layout/activity_main.xml" value="0.1490036231884058" />
         <entry key="app/src/main/res/layout/activity_online_learning_brief.xml" value="0.253125" />
@@ -37,8 +39,10 @@
         <entry key="app/src/main/res/layout/contact_information_page.xml" value="0.1675925925925926" />
         <entry key="app/src/main/res/layout/content_main.xml" value="0.14739583333333334" />
         <entry key="app/src/main/res/layout/fragment_first.xml" value="0.28894927536231885" />
+        <entry key="app/src/main/res/layout/frame_layout_example.xml" value="0.25052083333333336" />
         <entry key="app/src/main/res/layout/home_navigation.xml" value="0.11474164133738601" />
         <entry key="app/src/main/res/layout/introduction_component.xml" value="0.21666666666666667" />
+        <entry key="app/src/main/res/layout/item_navigation.xml" value="0.23697916666666666" />
         <entry key="app/src/main/res/layout/latest_events_page.xml" value="0.17553191489361702" />
         <entry key="app/src/main/res/layout/navigation_item.xml" value="0.12360688956433637" />
         <entry key="app/src/main/res/layout/ntroduction_component.xml" value="0.3007246376811594" />
@@ -49,6 +53,7 @@
         <entry key="app/src/main/res/layout/video_play_page.xml" value="0.15324214792299898" />
         <entry key="app/src/main/res/layout/view_introduction.xml" value="0.11524822695035461" />
         <entry key="app/src/main/res/layout/view_title.xml" value="0.2617753623188406" />
+        <entry key="app/src/main/res/layout/view_title_demo.xml" value="0.23697916666666666" />
         <entry key="app/src/main/res/layout/workshop_brief_page.xml" value="0.1160081053698075" />
       </map>
     </option>

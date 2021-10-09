@@ -29,6 +29,7 @@
         <activity android:name=".setting.ui.setting.AppSettingActivity" />
         <activity android:name=".setting.ui.webView.PrivacyPolicyActivity" />
         <activity android:name=".setting.ui.webView.IntellectualPropertyNoticeActivity" />
+        <activity android:name=".information.ui.beadhouse_information.ExampleActivity" />
     </application>
 
 </manifest>

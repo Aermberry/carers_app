@@ -14,20 +14,19 @@
         <ImageButton
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:background="?android:selectableItemBackground"
             android:layout_marginStart="25dp"
             android:layout_marginLeft="25dp"
             android:layout_marginTop="28dp"
+            android:background="?android:selectableItemBackground"
             android:contentDescription="@string/action_settings"
-            app:srcCompat="@drawable/back_button"
             android:onClick="onBackToHomeNavigationPage"
-            />
+            app:srcCompat="@drawable/back_button" />
         <!--標題-->
         <com.example.hkag_app_android.widget.TitleView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            app:title="@string/beadhouse_title"
-            app:image="@drawable/beadhouse" />
+            app:image="@drawable/beadhouse"
+            app:title="@string/beadhouse_title" />
 
         <!--視頻-->
         <LinearLayout
@@ -57,48 +56,16 @@
                 android:textColor="@color/white"
                 android:textSize="@dimen/font_18" />
         </LinearLayout>
-
-
-        <!--        <androidx.viewpager.widget.ViewPager-->
-        <!--            android:id="@+id/view_pager"-->
-        <!--            android:layout_width="match_parent"-->
-        <!--            android:layout_height="match_parent">-->
-
-        <!--            <com.google.android.material.tabs.TabLayout-->
-        <!--                android:id="@+id/tab_layout"-->
-        <!--                style="@style/MyTablayoutstyle"-->
-        <!--                android:layout_width="match_parent"-->
-        <!--                android:layout_height="wrap_content">-->
-
-        <!--                <com.google.android.material.tabs.TabItem-->
-        <!--                    android:layout_width="wrap_content"-->
-        <!--                    android:layout_height="wrap_content"-->
-        <!--                    android:icon="@drawable/eye_icon" />-->
-
-        <!--                <com.google.android.material.tabs.TabItem-->
-        <!--                    android:layout_width="wrap_content"-->
-        <!--                    android:layout_height="wrap_content"-->
-        <!--                    android:icon="@drawable/ear_icon" />-->
-
-        <!--                <com.google.android.material.tabs.TabItem-->
-        <!--                    android:layout_width="wrap_content"-->
-        <!--                    android:layout_height="wrap_content"-->
-        <!--                    android:icon="@drawable/mouth_icon" />-->
-
-        <!--                <com.google.android.material.tabs.TabItem-->
-        <!--                    android:layout_width="wrap_content"-->
-        <!--                    android:layout_height="wrap_content"-->
-        <!--                    android:icon="@drawable/konk_icon" />-->
-        <!--            </com.google.android.material.tabs.TabLayout>-->
-        <!--        </androidx.viewpager.widget.ViewPager>-->
+        <!--导航栏-->
         <com.google.android.material.tabs.TabLayout
-            android:id="@+id/tab_layout"
+            android:id="@+id/home_indicator"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content" />
-
-        <androidx.viewpager.widget.ViewPager
-            android:id="@+id/view_pager"
+            android:layout_height="@dimen/padding_30"
+            app:tabGravity="fill"
+            />
+        <androidx.viewpager2.widget.ViewPager2
+            android:id="@+id/home_pager"
             android:layout_width="match_parent"
-            android:layout_height="match_parent" />
+            android:layout_height="match_parent"/>
     </LinearLayout>
 </ScrollView>
