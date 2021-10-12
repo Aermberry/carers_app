@@ -57,15 +57,27 @@
                 android:textSize="@dimen/font_18" />
         </LinearLayout>
         <!--导航栏-->
-        <com.google.android.material.tabs.TabLayout
-            android:id="@+id/home_indicator"
+        <RelativeLayout
             android:layout_width="match_parent"
-            android:layout_height="@dimen/padding_30"
-            app:tabGravity="fill"
-            />
-        <androidx.viewpager2.widget.ViewPager2
-            android:id="@+id/home_pager"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"/>
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <com.google.android.material.tabs.TabLayout
+                android:id="@+id/tab_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/themBlue"
+                app:tabIndicatorHeight="2dp"
+                app:tabIndicatorColor="@color/colorAccent"
+                app:tabIndicator="@drawable/indicator"
+                app:tabIconTint="@null"
+                />
+
+            <androidx.viewpager2.widget.ViewPager2
+                android:id="@+id/view_pager2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tab_layout" />
+        </RelativeLayout>
     </LinearLayout>
 </ScrollView>

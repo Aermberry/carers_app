@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/padding_20"
+            android:background="@color/green" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/green_light"
+            android:orientation="vertical"
+            android:paddingHorizontal="@dimen/padding_15"
+            android:paddingVertical="@dimen/padding_20">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical">
+
+                <TextView
+                    android:id="@+id/vist_relat_text"
+                    android:layout_centerVertical="true"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginEnd="@dimen/padding_30"
+                    android:layout_marginRight="@dimen/padding_30"
+                    android:gravity="center_vertical"
+                    android:text="親自參觀"
+                    android:textAlignment="gravity"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/font_25"
+                    android:textStyle="bold" />
+
+                <ImageView
+                    android:id="@+id/vist_relat_image"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true"
+                    android:src="@drawable/icon_visit" />
+
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/padding_30"
+                android:background="@drawable/shape_10dp_transparent_background"
+                android:paddingVertical="@dimen/padding_15">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_horizontal"
+                    android:text="與長者一起親身參觀"
+                    android:textAlignment="center"
+                    android:textSize="@dimen/font_18" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/padding_10"
+                android:background="@drawable/shape_10dp_transparent_background"
+                android:paddingVertical="@dimen/padding_15">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_horizontal"
+                    android:text="親自了解院舍距離及交通時間"
+                    android:textAlignment="center"
+                    android:textSize="@dimen/font_18" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/padding_10"
+                android:background="@drawable/shape_10dp_transparent_background"
+                android:paddingHorizontal="@dimen/padding_25"
+                android:paddingVertical="@dimen/padding_15">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_horizontal"
+                    android:text="索取院舍資料單張，如院規、收費表等，了解院舍提供的服務"
+                    android:textAlignment="center"
+                    android:textSize="@dimen/font_18" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

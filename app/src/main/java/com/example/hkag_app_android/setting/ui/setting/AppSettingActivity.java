@@ -13,6 +13,7 @@ import android.widget.Toast;
 import androidx.appcompat.app.AppCompatActivity;
 
 import com.example.hkag_app_android.R;
+import com.example.hkag_app_android.information.ui.beadhouse_information.ExampleActivity;
 import com.example.hkag_app_android.information.ui.contact_information.ContactInformationActivity;
 import com.example.hkag_app_android.information.ui.online_learning_brief.OnLineLearningBriefActivity;
 import com.example.hkag_app_android.setting.ui.webView.IntellectualPropertyNoticeActivity;
@@ -60,7 +61,8 @@ public class AppSettingActivity extends AppCompatActivity {
         public void onClick(View v) {
             switch (v.getId()) {
                 case R.id.privacy_policy_button:
-                    _launcher.navigateToPage(AppSettingActivity.this, PrivacyPolicyActivity.class);
+//                    _launcher.navigateToPage(AppSettingActivity.this, PrivacyPolicyActivity.class);
+                    _launcher.navigateToPage(AppSettingActivity.this, ExampleActivity.class);
                     break;
 
                 case R.id.intellectual_property_notice_button:

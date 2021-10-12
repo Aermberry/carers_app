@@ -3,14 +3,375 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/themLightColor"
     tools:context=".information.ui.beadhouse_information.FirstFragment">
 
-    <!-- TODO: Update blank fragment layout -->
-    <TextView
+    <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:text="Fisrt fragment"
-        android:gravity="center"
-        />
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
 
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingStart="@dimen/padding_30"
+            android:paddingLeft="@dimen/padding_30"
+            android:paddingTop="@dimen/padding_30"
+            android:paddingEnd="@dimen/padding_0"
+            android:paddingRight="@dimen/padding_0">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="眼到"
+                    android:textColor="@color/themBlue"
+                    android:textSize="50dp"
+                    android:textStyle="bold" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/padding_10"
+                    android:layout_gravity="center"
+                    android:background="@color/themBlue"
+                    android:paddingStart="@dimen/padding_10"
+                    android:paddingLeft="@dimen/padding_10"
+                    android:paddingEnd="@dimen/padding_0"
+                    android:paddingRight="@dimen/padding_0" />
+            </LinearLayout>
+            <!--     1   -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingVertical="@dimen/padding_5">
+
+                <TextView
+                    android:layout_width="@dimen/padding_30"
+                    android:layout_height="@dimen/padding_30"
+                    android:layout_gravity="center"
+                    android:background="@drawable/shape_circle_black"
+                    android:paddingTop="@dimen/padding_3"
+                    android:text="1"
+                    android:textAlignment="center" />
+
+                <TextView
+
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="@dimen/padding_10"
+                    android:text="装修及环境是否舒适及安全"
+                    android:textSize="@dimen/padding_20" />
+            </LinearLayout>
+            <!--     2   -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingVertical="@dimen/padding_5">
+
+                <TextView
+                    android:layout_width="@dimen/padding_30"
+                    android:layout_height="@dimen/padding_30"
+                    android:layout_gravity="center"
+                    android:background="@drawable/shape_circle_black"
+                    android:paddingTop="@dimen/padding_3"
+                    android:text="2"
+                    android:textAlignment="center" />
+
+                <TextView
+
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="@dimen/padding_10"
+                    android:text="地面幹爽或濕滑？"
+                    android:textSize="@dimen/padding_20" />
+            </LinearLayout>
+            <!--     3   -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingVertical="@dimen/padding_5">
+
+                <TextView
+                    android:layout_width="@dimen/padding_30"
+                    android:layout_height="@dimen/padding_30"
+                    android:layout_gravity="center"
+                    android:background="@drawable/shape_circle_black"
+                    android:paddingTop="@dimen/padding_3"
+                    android:text="3"
+                    android:textAlignment="center" />
+
+                <TextView
+
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="@dimen/padding_10"
+                    android:text="燈光明亮或偏暗？"
+                    android:textSize="@dimen/padding_20" />
+            </LinearLayout>
+            <!--     4   -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingVertical="@dimen/padding_5">
+
+                <TextView
+                    android:layout_width="@dimen/padding_30"
+                    android:layout_height="@dimen/padding_30"
+                    android:layout_gravity="center"
+                    android:background="@drawable/shape_circle_black"
+                    android:paddingTop="@dimen/padding_3"
+                    android:text="4"
+                    android:textAlignment="center" />
+
+                <TextView
+
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="@dimen/padding_10"
+                    android:text="有沒有足夠活動空間及活動？"
+                    android:textSize="@dimen/padding_20" />
+            </LinearLayout>
+            <!--     5   -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingVertical="@dimen/padding_5">
+
+                <TextView
+                    android:layout_width="@dimen/padding_30"
+                    android:layout_height="@dimen/padding_30"
+                    android:layout_gravity="center"
+                    android:background="@drawable/shape_circle_black"
+                    android:paddingTop="@dimen/padding_3"
+                    android:text="5"
+                    android:textAlignment="center" />
+
+                <TextView
+
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="@dimen/padding_10"
+                    android:text="院友的表情是否祥和？"
+                    android:textSize="@dimen/padding_20" />
+            </LinearLayout>
+            <!--     6   -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingVertical="@dimen/padding_5">
+
+                <TextView
+                    android:layout_width="@dimen/padding_30"
+                    android:layout_height="@dimen/padding_30"
+                    android:layout_gravity="center"
+                    android:background="@drawable/shape_circle_black"
+                    android:paddingTop="@dimen/padding_3"
+                    android:text="6"
+                    android:textAlignment="center" />
+
+                <TextView
+
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="@dimen/padding_10"
+                    android:text="儀容是否整潔？"
+                    android:textSize="@dimen/padding_20" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@drawable/shape_dotted_line"
+            android:layerType="software" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingStart="@dimen/padding_30"
+            android:paddingLeft="@dimen/padding_30"
+            android:paddingEnd="@dimen/padding_0"
+            android:paddingRight="@dimen/padding_0">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="眼觀四周"
+                android:textColor="@color/themBlue"
+                android:textSize="@dimen/font_20"
+                android:textStyle="bold" />
+            <!--     1   -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingVertical="@dimen/padding_5">
+
+                <TextView
+                    android:layout_width="@dimen/padding_30"
+                    android:layout_height="@dimen/padding_30"
+                    android:layout_gravity="center"
+                    android:background="@drawable/shape_circle_black"
+                    android:paddingTop="@dimen/padding_3"
+                    android:text="1"
+                    android:textAlignment="center" />
+
+                <TextView
+
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="@dimen/padding_10"
+                    android:text="装修及环境是否舒适及安全"
+                    android:textSize="@dimen/padding_20" />
+            </LinearLayout>
+            <!--     2   -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingVertical="@dimen/padding_5">
+
+                <TextView
+                    android:layout_width="@dimen/padding_30"
+                    android:layout_height="@dimen/padding_30"
+                    android:layout_gravity="center"
+                    android:background="@drawable/shape_circle_black"
+                    android:paddingTop="@dimen/padding_3"
+                    android:text="2"
+                    android:textAlignment="center" />
+
+                <TextView
+
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="@dimen/padding_10"
+                    android:text="地面幹爽或濕滑？"
+                    android:textSize="@dimen/padding_20" />
+            </LinearLayout>
+            <!--     3   -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingVertical="@dimen/padding_5">
+
+                <TextView
+                    android:layout_width="@dimen/padding_30"
+                    android:layout_height="@dimen/padding_30"
+                    android:layout_gravity="center"
+                    android:background="@drawable/shape_circle_black"
+                    android:paddingTop="@dimen/padding_3"
+                    android:text="3"
+                    android:textAlignment="center" />
+
+                <TextView
+
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="@dimen/padding_10"
+                    android:text="院舍有沒有預防遊走的設施"
+                    android:textSize="@dimen/padding_20" />
+            </LinearLayout>
+            <!--     4   -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingVertical="@dimen/padding_5">
+
+                <TextView
+                    android:layout_width="@dimen/padding_30"
+                    android:layout_height="@dimen/padding_30"
+                    android:layout_gravity="center"
+                    android:background="@drawable/shape_circle_black"
+                    android:paddingTop="@dimen/padding_3"
+                    android:text="4"
+                    android:textAlignment="center" />
+
+                <TextView
+
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="@dimen/padding_10"
+                    android:text="使用約束物品情況"
+                    android:textSize="@dimen/padding_20" />
+            </LinearLayout>
+            <!--     5   -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingVertical="@dimen/padding_5">
+
+                <TextView
+                    android:layout_width="@dimen/padding_30"
+                    android:layout_height="@dimen/padding_30"
+                    android:layout_gravity="center"
+                    android:background="@drawable/shape_circle_black"
+                    android:paddingTop="@dimen/padding_3"
+                    android:text="5"
+                    android:textAlignment="center" />
+
+                <TextView
+
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="@dimen/padding_10"
+                    android:text="有沒有顧及長者的私隱及尊嚴？"
+                    android:textSize="@dimen/padding_20" />
+            </LinearLayout>
+            <!--     6   -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingVertical="@dimen/padding_5">
+
+                <TextView
+                    android:layout_width="@dimen/padding_30"
+                    android:layout_height="@dimen/padding_30"
+                    android:layout_gravity="center"
+                    android:background="@drawable/shape_circle_black"
+                    android:paddingTop="@dimen/padding_3"
+                    android:text="6"
+                    android:textAlignment="center" />
+
+                <TextView
+
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="@dimen/padding_10"
+                    android:text="有沒有康復器材、用具？"
+                    android:textSize="@dimen/padding_20" />
+            </LinearLayout>
+        </LinearLayout>
+
+
+        <include layout="@layout/view_visit_bottom"/>
+
+    </LinearLayout>
 </FrameLayout>
